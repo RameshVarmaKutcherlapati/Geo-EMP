@@ -5,20 +5,25 @@
  */
 package com.maersk.geography.smds.operations.msk;
 
+import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
+import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
 
-@SuppressWarnings("all")
-/** The generic avro schema used by publishers to publish events to the enterprise streaming service for Geography interface */
 @org.apache.avro.specific.AvroGenerated
 public class geographyMessage extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5219612773639427312L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"geographyMessage\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"doc\":\"The generic avro schema used by publishers to publish events to the enterprise streaming service for Geography interface\",\"fields\":[{\"name\":\"geography\",\"type\":{\"type\":\"record\",\"name\":\"geography\",\"doc\":\"Geography Entity Information Which includes AltNm,AltCd,fence,Country,Parent,BDA and BDALoc \",\"fields\":[{\"name\":\"geoId\",\"type\":\"string\"},{\"name\":\"geoType\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"status\",\"type\":\"string\"},{\"name\":\"validFrom\",\"type\":{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}},{\"name\":\"validTo\",\"type\":{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}},{\"name\":\"longitude\",\"type\":[\"null\",\"string\"]},{\"name\":\"latitude\",\"type\":[\"null\",\"string\"]},{\"name\":\"timeZone\",\"type\":[\"null\",\"string\"]},{\"name\":\"daylightSavingTime\",\"type\":[\"null\",\"string\"]},{\"name\":\"utcOffsetMinutes\",\"type\":[\"null\",\"string\"]},{\"name\":\"daylightSavingStart\",\"type\":{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},\"default\":null},{\"name\":\"daylightSavingEnd\",\"type\":{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},\"default\":null},{\"name\":\"daylightSavingShiftMinutes\",\"type\":[\"null\",\"string\"]},{\"name\":\"description\",\"type\":[\"null\",\"string\"]},{\"name\":\"workaroundReason\",\"type\":[\"null\",\"string\"]},{\"name\":\"restricted\",\"type\":[\"null\",\"string\"]},{\"name\":\"postalCodeMandatory\",\"type\":[\"null\",\"string\"]},{\"name\":\"stateProvienceMandatory\",\"type\":[\"null\",\"string\"]},{\"name\":\"dialingCode\",\"type\":[\"null\",\"string\"]},{\"name\":\"dialingCodeDescription\",\"type\":[\"null\",\"string\"]},{\"name\":\"portFlag\",\"type\":\"boolean\",\"default\":false},{\"name\":\"olsonTimezone\",\"type\":[\"null\",\"string\"]},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"hsudName\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateNames\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"alternateNames\",\"doc\":\"AlternateNames Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"description\",\"type\":[\"null\",\"string\"]},{\"name\":\"status\",\"type\":\"string\"}]}}]},{\"name\":\"alternateCodes\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"alternateCodes\",\"doc\":\"AlternateCodes Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}},{\"name\":\"country\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"country\",\"doc\":\"Country Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"countryAlternateCodes\",\"doc\":\"Country AlternateCode Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]},{\"name\":\"parent\",\"type\":{\"type\":\"record\",\"name\":\"parent\",\"doc\":\"Parent Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"parentAlternateCode\",\"doc\":\"Parent AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}},{\"name\":\"subCityParent\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"subCityParent\",\"doc\":\"SubCityParent details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"subCityParentAlternateCode\",\"doc\":\"SubCityParent AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]},{\"name\":\"bda\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bda\",\"doc\":\"BDA Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bdaAlternateCode\",\"doc\":\"BDA AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]},{\"name\":\"bdaLocations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bdaLocation\",\"doc\":\"BDA Location Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"status\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bdaLocationAlternateCode\",\"doc\":\"BDALocation AlternateCode Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]}]}}]}");
+  private static final long serialVersionUID = 2711816064869436186L;
+
+
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"geographyMessage\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"fields\":[{\"name\":\"geography\",\"type\":{\"type\":\"record\",\"name\":\"geography\",\"doc\":\"Geography Entity Information Which includes subcity,city,state,country,continent and their respective Alternate name and Code Information\",\"fields\":[{\"name\":\"geoId\",\"type\":\"string\"},{\"name\":\"geoType\",\"type\":\"string\"},{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"status\",\"type\":\"string\"},{\"name\":\"validFrom\",\"type\":{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}},{\"name\":\"validTo\",\"type\":{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}},{\"name\":\"longitude\",\"type\":[\"null\",\"string\"]},{\"name\":\"latitude\",\"type\":[\"null\",\"string\"]},{\"name\":\"timeZone\",\"type\":[\"null\",\"string\"]},{\"name\":\"daylightSavingTime\",\"type\":[\"null\",\"string\"]},{\"name\":\"utcOffsetMinutes\",\"type\":[\"null\",\"string\"]},{\"name\":\"daylightSavingStart\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"daylightSavingEnd\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}],\"default\":null},{\"name\":\"daylightSavingShiftMinutes\",\"type\":[\"null\",\"string\"]},{\"name\":\"description\",\"type\":[\"null\",\"string\"]},{\"name\":\"workaroundReason\",\"type\":[\"null\",\"string\"]},{\"name\":\"restricted\",\"type\":[\"null\",\"string\"]},{\"name\":\"postalCodeMandatory\",\"type\":[\"null\",\"string\"]},{\"name\":\"stateProvienceMandatory\",\"type\":[\"null\",\"string\"]},{\"name\":\"dialingCode\",\"type\":[\"null\",\"string\"]},{\"name\":\"dialingCodeDescription\",\"type\":[\"null\",\"string\"]},{\"name\":\"portFlag\",\"type\":\"boolean\",\"default\":false},{\"name\":\"olsonTimezone\",\"type\":[\"null\",\"string\"]},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"hsudName\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateNames\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"alternateNames\",\"doc\":\"AlternateNames Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"description\",\"type\":[\"null\",\"string\"]},{\"name\":\"status\",\"type\":\"string\"}]}}]},{\"name\":\"alternateCodes\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"alternateCodes\",\"doc\":\"AlternateCodes Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}},{\"name\":\"country\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"country\",\"doc\":\"Country Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"countryAlternateCodes\",\"doc\":\"Country AlternateCode Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]},{\"name\":\"parent\",\"type\":{\"type\":\"record\",\"name\":\"parent\",\"doc\":\"Display Parent Information.For city Copenghagen  the parent is country Denmark\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"parentAlternateCode\",\"doc\":\"Parent AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}},{\"name\":\"subCityParent\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"subCityParent\",\"doc\":\"Display Sub City Parent Information.For city Pune the sub cities are like viman nagar and so on\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"subCityParentAlternateCode\",\"doc\":\"SubCityParent AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]},{\"name\":\"bda\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bda\",\"doc\":\"Display business defined area information. Example : North India,West & Central Asia and so on\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bdaAlternateCode\",\"doc\":\"BDA AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]},{\"name\":\"bdaLocations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bdaLocation\",\"doc\":\"Display business defined area location and status information. Example : Liberty city\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"status\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"bdaLocationAlternateCode\",\"doc\":\"BDALocation AlternateCode Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}}]}]}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
-  private static SpecificData MODEL$ = new SpecificData();
+  private static final SpecificData MODEL$ = new SpecificData();
+  static {
+    MODEL$.addLogicalTypeConversion(new org.apache.avro.data.TimeConversions.TimestampMillisConversion());
+  }
 
   private static final BinaryMessageEncoder<geographyMessage> ENCODER =
       new BinaryMessageEncoder<geographyMessage>(MODEL$, SCHEMA$);
@@ -27,7 +32,16 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
       new BinaryMessageDecoder<geographyMessage>(MODEL$, SCHEMA$);
 
   /**
+   * Return the BinaryMessageEncoder instance used by this class.
+   * @return the message encoder used by this class
+   */
+  public static BinaryMessageEncoder<geographyMessage> getEncoder() {
+    return ENCODER;
+  }
+
+  /**
    * Return the BinaryMessageDecoder instance used by this class.
+   * @return the message decoder used by this class
    */
   public static BinaryMessageDecoder<geographyMessage> getDecoder() {
     return DECODER;
@@ -36,23 +50,33 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
   /**
    * Create a new BinaryMessageDecoder instance for this class that uses the specified {@link SchemaStore}.
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
+   * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
   public static BinaryMessageDecoder<geographyMessage> createDecoder(SchemaStore resolver) {
     return new BinaryMessageDecoder<geographyMessage>(MODEL$, SCHEMA$, resolver);
   }
 
-  /** Serializes this geographyMessage to a ByteBuffer. */
+  /**
+   * Serializes this geographyMessage to a ByteBuffer.
+   * @return a buffer holding the serialized data for this instance
+   * @throws java.io.IOException if this instance could not be serialized
+   */
   public java.nio.ByteBuffer toByteBuffer() throws java.io.IOException {
     return ENCODER.encode(this);
   }
 
-  /** Deserializes a geographyMessage from a ByteBuffer. */
+  /**
+   * Deserializes a geographyMessage from a ByteBuffer.
+   * @param b a byte buffer holding serialized data for an instance of this class
+   * @return a geographyMessage instance decoded from the given buffer
+   * @throws java.io.IOException if the given bytes could not be deserialized into an instance of this class
+   */
   public static geographyMessage fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
 
-  @Deprecated public com.maersk.geography.smds.operations.msk.geography geography;
+  private com.maersk.geography.smds.operations.msk.geography geography;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -69,12 +93,13 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
     this.geography = geography;
   }
 
+  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return geography;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -83,7 +108,7 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: geography = (com.maersk.geography.smds.operations.msk.geography)value$; break;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -94,6 +119,7 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
   public com.maersk.geography.smds.operations.msk.geography getGeography() {
     return geography;
   }
+
 
   /**
    * Sets the value of the 'geography' field.
@@ -117,7 +143,11 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
    * @return A new geographyMessage RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.geographyMessage.Builder newBuilder(com.maersk.geography.smds.operations.msk.geographyMessage.Builder other) {
-    return new com.maersk.geography.smds.operations.msk.geographyMessage.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.geographyMessage.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.geographyMessage.Builder(other);
+    }
   }
 
   /**
@@ -126,12 +156,17 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
    * @return A new geographyMessage RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.geographyMessage.Builder newBuilder(com.maersk.geography.smds.operations.msk.geographyMessage other) {
-    return new com.maersk.geography.smds.operations.msk.geographyMessage.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.geographyMessage.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.geographyMessage.Builder(other);
+    }
   }
 
   /**
    * RecordBuilder for geographyMessage instances.
    */
+  @org.apache.avro.specific.AvroGenerated
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<geographyMessage>
     implements org.apache.avro.data.RecordBuilder<geographyMessage> {
 
@@ -140,7 +175,7 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
 
     /** Creates a new Builder */
     private Builder() {
-      super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
     }
 
     /**
@@ -151,7 +186,7 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
       super(other);
       if (isValidValue(fields()[0], other.geography)) {
         this.geography = data().deepCopy(fields()[0].schema(), other.geography);
-        fieldSetFlags()[0] = true;
+        fieldSetFlags()[0] = other.fieldSetFlags()[0];
       }
       if (other.hasGeographyBuilder()) {
         this.geographyBuilder = com.maersk.geography.smds.operations.msk.geography.newBuilder(other.getGeographyBuilder());
@@ -163,7 +198,7 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
      * @param other The existing instance to copy.
      */
     private Builder(com.maersk.geography.smds.operations.msk.geographyMessage other) {
-            super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.geography)) {
         this.geography = data().deepCopy(fields()[0].schema(), other.geography);
         fieldSetFlags()[0] = true;
@@ -178,6 +213,7 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
     public com.maersk.geography.smds.operations.msk.geography getGeography() {
       return geography;
     }
+
 
     /**
       * Sets the value of the 'geography' field.
@@ -220,6 +256,7 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
      * @param value The builder instance that must be set.
      * @return This builder.
      */
+
     public com.maersk.geography.smds.operations.msk.geographyMessage.Builder setGeographyBuilder(com.maersk.geography.smds.operations.msk.geography.Builder value) {
       clearGeography();
       geographyBuilder = value;
@@ -251,11 +288,18 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
       try {
         geographyMessage record = new geographyMessage();
         if (geographyBuilder != null) {
-          record.geography = this.geographyBuilder.build();
+          try {
+            record.geography = this.geographyBuilder.build();
+          } catch (org.apache.avro.AvroMissingFieldException e) {
+            e.addParentField(record.getSchema().getField("geography"));
+            throw e;
+          }
         } else {
           record.geography = fieldSetFlags()[0] ? this.geography : (com.maersk.geography.smds.operations.msk.geography) defaultValue(fields()[0]);
         }
         return record;
+      } catch (org.apache.avro.AvroMissingFieldException e) {
+        throw e;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
@@ -281,3 +325,13 @@ public class geographyMessage extends org.apache.avro.specific.SpecificRecordBas
   }
 
 }
+
+
+
+
+
+
+
+
+
+

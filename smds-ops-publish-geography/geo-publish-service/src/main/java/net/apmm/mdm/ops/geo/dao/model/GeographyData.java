@@ -3,6 +3,8 @@ package net.apmm.mdm.ops.geo.dao.model;
 import lombok.Builder;
 import lombok.Data;
 
+import java.sql.Timestamp;
+import java.time.Instant;
 import java.util.Date;
 import java.util.List;
 @Data

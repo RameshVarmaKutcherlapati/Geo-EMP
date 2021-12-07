@@ -5,20 +5,23 @@
  */
 package com.maersk.geography.smds.operations.msk;
 
+import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
+import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
 
-@SuppressWarnings("all")
 /** AlternateNames Details */
 @org.apache.avro.specific.AvroGenerated
 public class alternateNames extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -2660481885376608520L;
+
+
   public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"alternateNames\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"doc\":\"AlternateNames Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"description\",\"type\":[\"null\",\"string\"]},{\"name\":\"status\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
-  private static SpecificData MODEL$ = new SpecificData();
+  private static final SpecificData MODEL$ = new SpecificData();
 
   private static final BinaryMessageEncoder<alternateNames> ENCODER =
       new BinaryMessageEncoder<alternateNames>(MODEL$, SCHEMA$);
@@ -27,7 +30,16 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
       new BinaryMessageDecoder<alternateNames>(MODEL$, SCHEMA$);
 
   /**
+   * Return the BinaryMessageEncoder instance used by this class.
+   * @return the message encoder used by this class
+   */
+  public static BinaryMessageEncoder<alternateNames> getEncoder() {
+    return ENCODER;
+  }
+
+  /**
    * Return the BinaryMessageDecoder instance used by this class.
+   * @return the message decoder used by this class
    */
   public static BinaryMessageDecoder<alternateNames> getDecoder() {
     return DECODER;
@@ -36,25 +48,35 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
   /**
    * Create a new BinaryMessageDecoder instance for this class that uses the specified {@link SchemaStore}.
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
+   * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
   public static BinaryMessageDecoder<alternateNames> createDecoder(SchemaStore resolver) {
     return new BinaryMessageDecoder<alternateNames>(MODEL$, SCHEMA$, resolver);
   }
 
-  /** Serializes this alternateNames to a ByteBuffer. */
+  /**
+   * Serializes this alternateNames to a ByteBuffer.
+   * @return a buffer holding the serialized data for this instance
+   * @throws java.io.IOException if this instance could not be serialized
+   */
   public java.nio.ByteBuffer toByteBuffer() throws java.io.IOException {
     return ENCODER.encode(this);
   }
 
-  /** Deserializes a alternateNames from a ByteBuffer. */
+  /**
+   * Deserializes a alternateNames from a ByteBuffer.
+   * @param b a byte buffer holding serialized data for an instance of this class
+   * @return a alternateNames instance decoded from the given buffer
+   * @throws java.io.IOException if the given bytes could not be deserialized into an instance of this class
+   */
   public static alternateNames fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
 
-  @Deprecated public java.lang.CharSequence name;
-  @Deprecated public java.lang.CharSequence description;
-  @Deprecated public java.lang.CharSequence status;
+  private java.lang.CharSequence name;
+  private java.lang.CharSequence description;
+  private java.lang.CharSequence status;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -75,6 +97,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
     this.status = status;
   }
 
+  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
@@ -82,7 +105,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
     case 0: return name;
     case 1: return description;
     case 2: return status;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -93,7 +116,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
     case 0: name = (java.lang.CharSequence)value$; break;
     case 1: description = (java.lang.CharSequence)value$; break;
     case 2: status = (java.lang.CharSequence)value$; break;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -104,6 +127,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
   public java.lang.CharSequence getName() {
     return name;
   }
+
 
   /**
    * Sets the value of the 'name' field.
@@ -121,6 +145,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
     return description;
   }
 
+
   /**
    * Sets the value of the 'description' field.
    * @param value the value to set.
@@ -136,6 +161,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
   public java.lang.CharSequence getStatus() {
     return status;
   }
+
 
   /**
    * Sets the value of the 'status' field.
@@ -159,7 +185,11 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
    * @return A new alternateNames RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.alternateNames.Builder newBuilder(com.maersk.geography.smds.operations.msk.alternateNames.Builder other) {
-    return new com.maersk.geography.smds.operations.msk.alternateNames.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.alternateNames.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.alternateNames.Builder(other);
+    }
   }
 
   /**
@@ -168,12 +198,17 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
    * @return A new alternateNames RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.alternateNames.Builder newBuilder(com.maersk.geography.smds.operations.msk.alternateNames other) {
-    return new com.maersk.geography.smds.operations.msk.alternateNames.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.alternateNames.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.alternateNames.Builder(other);
+    }
   }
 
   /**
    * RecordBuilder for alternateNames instances.
    */
+  @org.apache.avro.specific.AvroGenerated
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<alternateNames>
     implements org.apache.avro.data.RecordBuilder<alternateNames> {
 
@@ -183,7 +218,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
 
     /** Creates a new Builder */
     private Builder() {
-      super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
     }
 
     /**
@@ -194,15 +229,15 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
       super(other);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
-        fieldSetFlags()[0] = true;
+        fieldSetFlags()[0] = other.fieldSetFlags()[0];
       }
       if (isValidValue(fields()[1], other.description)) {
         this.description = data().deepCopy(fields()[1].schema(), other.description);
-        fieldSetFlags()[1] = true;
+        fieldSetFlags()[1] = other.fieldSetFlags()[1];
       }
       if (isValidValue(fields()[2], other.status)) {
         this.status = data().deepCopy(fields()[2].schema(), other.status);
-        fieldSetFlags()[2] = true;
+        fieldSetFlags()[2] = other.fieldSetFlags()[2];
       }
     }
 
@@ -211,7 +246,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
      * @param other The existing instance to copy.
      */
     private Builder(com.maersk.geography.smds.operations.msk.alternateNames other) {
-            super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
         fieldSetFlags()[0] = true;
@@ -233,6 +268,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
     public java.lang.CharSequence getName() {
       return name;
     }
+
 
     /**
       * Sets the value of the 'name' field.
@@ -273,6 +309,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
       return description;
     }
 
+
     /**
       * Sets the value of the 'description' field.
       * @param value The value of 'description'.
@@ -311,6 +348,7 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
     public java.lang.CharSequence getStatus() {
       return status;
     }
+
 
     /**
       * Sets the value of the 'status' field.
@@ -352,6 +390,8 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
         record.description = fieldSetFlags()[1] ? this.description : (java.lang.CharSequence) defaultValue(fields()[1]);
         record.status = fieldSetFlags()[2] ? this.status : (java.lang.CharSequence) defaultValue(fields()[2]);
         return record;
+      } catch (org.apache.avro.AvroMissingFieldException e) {
+        throw e;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
@@ -376,4 +416,75 @@ public class alternateNames extends org.apache.avro.specific.SpecificRecordBase 
     READER$.read(this, SpecificData.getDecoder(in));
   }
 
+  @Override protected boolean hasCustomCoders() { return true; }
+
+  @Override public void customEncode(org.apache.avro.io.Encoder out)
+    throws java.io.IOException
+  {
+    out.writeString(this.name);
+
+    if (this.description == null) {
+      out.writeIndex(0);
+      out.writeNull();
+    } else {
+      out.writeIndex(1);
+      out.writeString(this.description);
+    }
+
+    out.writeString(this.status);
+
+  }
+
+  @Override public void customDecode(org.apache.avro.io.ResolvingDecoder in)
+    throws java.io.IOException
+  {
+    org.apache.avro.Schema.Field[] fieldOrder = in.readFieldOrderIfDiff();
+    if (fieldOrder == null) {
+      this.name = in.readString(this.name instanceof Utf8 ? (Utf8)this.name : null);
+
+      if (in.readIndex() != 1) {
+        in.readNull();
+        this.description = null;
+      } else {
+        this.description = in.readString(this.description instanceof Utf8 ? (Utf8)this.description : null);
+      }
+
+      this.status = in.readString(this.status instanceof Utf8 ? (Utf8)this.status : null);
+
+    } else {
+      for (int i = 0; i < 3; i++) {
+        switch (fieldOrder[i].pos()) {
+        case 0:
+          this.name = in.readString(this.name instanceof Utf8 ? (Utf8)this.name : null);
+          break;
+
+        case 1:
+          if (in.readIndex() != 1) {
+            in.readNull();
+            this.description = null;
+          } else {
+            this.description = in.readString(this.description instanceof Utf8 ? (Utf8)this.description : null);
+          }
+          break;
+
+        case 2:
+          this.status = in.readString(this.status instanceof Utf8 ? (Utf8)this.status : null);
+          break;
+
+        default:
+          throw new java.io.IOException("Corrupt ResolvingDecoder.");
+        }
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+

@@ -5,20 +5,23 @@
  */
 package com.maersk.geography.smds.operations.msk;
 
+import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
+import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
 
-@SuppressWarnings("all")
-/** Parent Details */
+/** Display Parent Information.For city Copenghagen  the parent is country Denmark */
 @org.apache.avro.specific.AvroGenerated
 public class parent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 6667925560591839408L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"parent\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"doc\":\"Parent Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"parentAlternateCode\",\"doc\":\"Parent AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}");
+
+
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"parent\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"doc\":\"Display Parent Information.For city Copenghagen  the parent is country Denmark\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"bdaType\",\"type\":[\"null\",\"string\"]},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"parentAlternateCode\",\"doc\":\"Parent AlternateCode details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
-  private static SpecificData MODEL$ = new SpecificData();
+  private static final SpecificData MODEL$ = new SpecificData();
 
   private static final BinaryMessageEncoder<parent> ENCODER =
       new BinaryMessageEncoder<parent>(MODEL$, SCHEMA$);
@@ -27,7 +30,16 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
       new BinaryMessageDecoder<parent>(MODEL$, SCHEMA$);
 
   /**
+   * Return the BinaryMessageEncoder instance used by this class.
+   * @return the message encoder used by this class
+   */
+  public static BinaryMessageEncoder<parent> getEncoder() {
+    return ENCODER;
+  }
+
+  /**
    * Return the BinaryMessageDecoder instance used by this class.
+   * @return the message decoder used by this class
    */
   public static BinaryMessageDecoder<parent> getDecoder() {
     return DECODER;
@@ -36,26 +48,36 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
   /**
    * Create a new BinaryMessageDecoder instance for this class that uses the specified {@link SchemaStore}.
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
+   * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
   public static BinaryMessageDecoder<parent> createDecoder(SchemaStore resolver) {
     return new BinaryMessageDecoder<parent>(MODEL$, SCHEMA$, resolver);
   }
 
-  /** Serializes this parent to a ByteBuffer. */
+  /**
+   * Serializes this parent to a ByteBuffer.
+   * @return a buffer holding the serialized data for this instance
+   * @throws java.io.IOException if this instance could not be serialized
+   */
   public java.nio.ByteBuffer toByteBuffer() throws java.io.IOException {
     return ENCODER.encode(this);
   }
 
-  /** Deserializes a parent from a ByteBuffer. */
+  /**
+   * Deserializes a parent from a ByteBuffer.
+   * @param b a byte buffer holding serialized data for an instance of this class
+   * @return a parent instance decoded from the given buffer
+   * @throws java.io.IOException if the given bytes could not be deserialized into an instance of this class
+   */
   public static parent fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
 
-  @Deprecated public java.lang.CharSequence name;
-  @Deprecated public java.lang.CharSequence type;
-  @Deprecated public java.lang.CharSequence bdaType;
-  @Deprecated public java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode> alternateCodes;
+  private java.lang.CharSequence name;
+  private java.lang.CharSequence type;
+  private java.lang.CharSequence bdaType;
+  private java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode> alternateCodes;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -78,6 +100,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     this.alternateCodes = alternateCodes;
   }
 
+  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
@@ -86,7 +109,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     case 1: return type;
     case 2: return bdaType;
     case 3: return alternateCodes;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -98,7 +121,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     case 1: type = (java.lang.CharSequence)value$; break;
     case 2: bdaType = (java.lang.CharSequence)value$; break;
     case 3: alternateCodes = (java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode>)value$; break;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -109,6 +132,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
   public java.lang.CharSequence getName() {
     return name;
   }
+
 
   /**
    * Sets the value of the 'name' field.
@@ -126,6 +150,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     return type;
   }
 
+
   /**
    * Sets the value of the 'type' field.
    * @param value the value to set.
@@ -142,6 +167,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     return bdaType;
   }
 
+
   /**
    * Sets the value of the 'bdaType' field.
    * @param value the value to set.
@@ -157,6 +183,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
   public java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode> getAlternateCodes() {
     return alternateCodes;
   }
+
 
   /**
    * Sets the value of the 'alternateCodes' field.
@@ -180,7 +207,11 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
    * @return A new parent RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.parent.Builder newBuilder(com.maersk.geography.smds.operations.msk.parent.Builder other) {
-    return new com.maersk.geography.smds.operations.msk.parent.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.parent.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.parent.Builder(other);
+    }
   }
 
   /**
@@ -189,12 +220,17 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
    * @return A new parent RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.parent.Builder newBuilder(com.maersk.geography.smds.operations.msk.parent other) {
-    return new com.maersk.geography.smds.operations.msk.parent.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.parent.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.parent.Builder(other);
+    }
   }
 
   /**
    * RecordBuilder for parent instances.
    */
+  @org.apache.avro.specific.AvroGenerated
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<parent>
     implements org.apache.avro.data.RecordBuilder<parent> {
 
@@ -205,7 +241,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
 
     /** Creates a new Builder */
     private Builder() {
-      super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
     }
 
     /**
@@ -216,19 +252,19 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
       super(other);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
-        fieldSetFlags()[0] = true;
+        fieldSetFlags()[0] = other.fieldSetFlags()[0];
       }
       if (isValidValue(fields()[1], other.type)) {
         this.type = data().deepCopy(fields()[1].schema(), other.type);
-        fieldSetFlags()[1] = true;
+        fieldSetFlags()[1] = other.fieldSetFlags()[1];
       }
       if (isValidValue(fields()[2], other.bdaType)) {
         this.bdaType = data().deepCopy(fields()[2].schema(), other.bdaType);
-        fieldSetFlags()[2] = true;
+        fieldSetFlags()[2] = other.fieldSetFlags()[2];
       }
       if (isValidValue(fields()[3], other.alternateCodes)) {
         this.alternateCodes = data().deepCopy(fields()[3].schema(), other.alternateCodes);
-        fieldSetFlags()[3] = true;
+        fieldSetFlags()[3] = other.fieldSetFlags()[3];
       }
     }
 
@@ -237,7 +273,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
      * @param other The existing instance to copy.
      */
     private Builder(com.maersk.geography.smds.operations.msk.parent other) {
-            super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
         fieldSetFlags()[0] = true;
@@ -263,6 +299,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     public java.lang.CharSequence getName() {
       return name;
     }
+
 
     /**
       * Sets the value of the 'name' field.
@@ -303,6 +340,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
       return type;
     }
 
+
     /**
       * Sets the value of the 'type' field.
       * @param value The value of 'type'.
@@ -342,6 +380,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
       return bdaType;
     }
 
+
     /**
       * Sets the value of the 'bdaType' field.
       * @param value The value of 'bdaType'.
@@ -380,6 +419,7 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     public java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode> getAlternateCodes() {
       return alternateCodes;
     }
+
 
     /**
       * Sets the value of the 'alternateCodes' field.
@@ -422,6 +462,8 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
         record.bdaType = fieldSetFlags()[2] ? this.bdaType : (java.lang.CharSequence) defaultValue(fields()[2]);
         record.alternateCodes = fieldSetFlags()[3] ? this.alternateCodes : (java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode>) defaultValue(fields()[3]);
         return record;
+      } catch (org.apache.avro.AvroMissingFieldException e) {
+        throw e;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
@@ -446,4 +488,142 @@ public class parent extends org.apache.avro.specific.SpecificRecordBase implemen
     READER$.read(this, SpecificData.getDecoder(in));
   }
 
+  @Override protected boolean hasCustomCoders() { return true; }
+
+  @Override public void customEncode(org.apache.avro.io.Encoder out)
+    throws java.io.IOException
+  {
+    out.writeString(this.name);
+
+    out.writeString(this.type);
+
+    if (this.bdaType == null) {
+      out.writeIndex(0);
+      out.writeNull();
+    } else {
+      out.writeIndex(1);
+      out.writeString(this.bdaType);
+    }
+
+    if (this.alternateCodes == null) {
+      out.writeIndex(0);
+      out.writeNull();
+    } else {
+      out.writeIndex(1);
+      long size0 = this.alternateCodes.size();
+      out.writeArrayStart();
+      out.setItemCount(size0);
+      long actualSize0 = 0;
+      for (com.maersk.geography.smds.operations.msk.parentAlternateCode e0: this.alternateCodes) {
+        actualSize0++;
+        out.startItem();
+        e0.customEncode(out);
+      }
+      out.writeArrayEnd();
+      if (actualSize0 != size0)
+        throw new java.util.ConcurrentModificationException("Array-size written was " + size0 + ", but element count was " + actualSize0 + ".");
+    }
+
+  }
+
+  @Override public void customDecode(org.apache.avro.io.ResolvingDecoder in)
+    throws java.io.IOException
+  {
+    org.apache.avro.Schema.Field[] fieldOrder = in.readFieldOrderIfDiff();
+    if (fieldOrder == null) {
+      this.name = in.readString(this.name instanceof Utf8 ? (Utf8)this.name : null);
+
+      this.type = in.readString(this.type instanceof Utf8 ? (Utf8)this.type : null);
+
+      if (in.readIndex() != 1) {
+        in.readNull();
+        this.bdaType = null;
+      } else {
+        this.bdaType = in.readString(this.bdaType instanceof Utf8 ? (Utf8)this.bdaType : null);
+      }
+
+      if (in.readIndex() != 1) {
+        in.readNull();
+        this.alternateCodes = null;
+      } else {
+        long size0 = in.readArrayStart();
+        java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode> a0 = this.alternateCodes;
+        if (a0 == null) {
+          a0 = new SpecificData.Array<com.maersk.geography.smds.operations.msk.parentAlternateCode>((int)size0, SCHEMA$.getField("alternateCodes").schema().getTypes().get(1));
+          this.alternateCodes = a0;
+        } else a0.clear();
+        SpecificData.Array<com.maersk.geography.smds.operations.msk.parentAlternateCode> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.maersk.geography.smds.operations.msk.parentAlternateCode>)a0 : null);
+        for ( ; 0 < size0; size0 = in.arrayNext()) {
+          for ( ; size0 != 0; size0--) {
+            com.maersk.geography.smds.operations.msk.parentAlternateCode e0 = (ga0 != null ? ga0.peek() : null);
+            if (e0 == null) {
+              e0 = new com.maersk.geography.smds.operations.msk.parentAlternateCode();
+            }
+            e0.customDecode(in);
+            a0.add(e0);
+          }
+        }
+      }
+
+    } else {
+      for (int i = 0; i < 4; i++) {
+        switch (fieldOrder[i].pos()) {
+        case 0:
+          this.name = in.readString(this.name instanceof Utf8 ? (Utf8)this.name : null);
+          break;
+
+        case 1:
+          this.type = in.readString(this.type instanceof Utf8 ? (Utf8)this.type : null);
+          break;
+
+        case 2:
+          if (in.readIndex() != 1) {
+            in.readNull();
+            this.bdaType = null;
+          } else {
+            this.bdaType = in.readString(this.bdaType instanceof Utf8 ? (Utf8)this.bdaType : null);
+          }
+          break;
+
+        case 3:
+          if (in.readIndex() != 1) {
+            in.readNull();
+            this.alternateCodes = null;
+          } else {
+            long size0 = in.readArrayStart();
+            java.util.List<com.maersk.geography.smds.operations.msk.parentAlternateCode> a0 = this.alternateCodes;
+            if (a0 == null) {
+              a0 = new SpecificData.Array<com.maersk.geography.smds.operations.msk.parentAlternateCode>((int)size0, SCHEMA$.getField("alternateCodes").schema().getTypes().get(1));
+              this.alternateCodes = a0;
+            } else a0.clear();
+            SpecificData.Array<com.maersk.geography.smds.operations.msk.parentAlternateCode> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.maersk.geography.smds.operations.msk.parentAlternateCode>)a0 : null);
+            for ( ; 0 < size0; size0 = in.arrayNext()) {
+              for ( ; size0 != 0; size0--) {
+                com.maersk.geography.smds.operations.msk.parentAlternateCode e0 = (ga0 != null ? ga0.peek() : null);
+                if (e0 == null) {
+                  e0 = new com.maersk.geography.smds.operations.msk.parentAlternateCode();
+                }
+                e0.customDecode(in);
+                a0.add(e0);
+              }
+            }
+          }
+          break;
+
+        default:
+          throw new java.io.IOException("Corrupt ResolvingDecoder.");
+        }
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+

@@ -5,20 +5,23 @@
  */
 package com.maersk.geography.smds.operations.msk;
 
+import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
+import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
 
-@SuppressWarnings("all")
 /** AlternateCodes Details */
 @org.apache.avro.specific.AvroGenerated
 public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -1376200213076275221L;
+
+
   public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"alternateCodes\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"doc\":\"AlternateCodes Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
-  private static SpecificData MODEL$ = new SpecificData();
+  private static final SpecificData MODEL$ = new SpecificData();
 
   private static final BinaryMessageEncoder<alternateCodes> ENCODER =
       new BinaryMessageEncoder<alternateCodes>(MODEL$, SCHEMA$);
@@ -27,7 +30,16 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
       new BinaryMessageDecoder<alternateCodes>(MODEL$, SCHEMA$);
 
   /**
+   * Return the BinaryMessageEncoder instance used by this class.
+   * @return the message encoder used by this class
+   */
+  public static BinaryMessageEncoder<alternateCodes> getEncoder() {
+    return ENCODER;
+  }
+
+  /**
    * Return the BinaryMessageDecoder instance used by this class.
+   * @return the message decoder used by this class
    */
   public static BinaryMessageDecoder<alternateCodes> getDecoder() {
     return DECODER;
@@ -36,24 +48,34 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
   /**
    * Create a new BinaryMessageDecoder instance for this class that uses the specified {@link SchemaStore}.
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
+   * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
   public static BinaryMessageDecoder<alternateCodes> createDecoder(SchemaStore resolver) {
     return new BinaryMessageDecoder<alternateCodes>(MODEL$, SCHEMA$, resolver);
   }
 
-  /** Serializes this alternateCodes to a ByteBuffer. */
+  /**
+   * Serializes this alternateCodes to a ByteBuffer.
+   * @return a buffer holding the serialized data for this instance
+   * @throws java.io.IOException if this instance could not be serialized
+   */
   public java.nio.ByteBuffer toByteBuffer() throws java.io.IOException {
     return ENCODER.encode(this);
   }
 
-  /** Deserializes a alternateCodes from a ByteBuffer. */
+  /**
+   * Deserializes a alternateCodes from a ByteBuffer.
+   * @param b a byte buffer holding serialized data for an instance of this class
+   * @return a alternateCodes instance decoded from the given buffer
+   * @throws java.io.IOException if the given bytes could not be deserialized into an instance of this class
+   */
   public static alternateCodes fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
 
-  @Deprecated public java.lang.CharSequence codeType;
-  @Deprecated public java.lang.CharSequence code;
+  private java.lang.CharSequence codeType;
+  private java.lang.CharSequence code;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -72,13 +94,14 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
     this.code = code;
   }
 
+  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return codeType;
     case 1: return code;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -88,7 +111,7 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
     switch (field$) {
     case 0: codeType = (java.lang.CharSequence)value$; break;
     case 1: code = (java.lang.CharSequence)value$; break;
-    default: throw new org.apache.avro.AvroRuntimeException("Bad index");
+    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -99,6 +122,7 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
   public java.lang.CharSequence getCodeType() {
     return codeType;
   }
+
 
   /**
    * Sets the value of the 'codeType' field.
@@ -115,6 +139,7 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
   public java.lang.CharSequence getCode() {
     return code;
   }
+
 
   /**
    * Sets the value of the 'code' field.
@@ -138,7 +163,11 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
    * @return A new alternateCodes RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.alternateCodes.Builder newBuilder(com.maersk.geography.smds.operations.msk.alternateCodes.Builder other) {
-    return new com.maersk.geography.smds.operations.msk.alternateCodes.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.alternateCodes.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.alternateCodes.Builder(other);
+    }
   }
 
   /**
@@ -147,12 +176,17 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
    * @return A new alternateCodes RecordBuilder
    */
   public static com.maersk.geography.smds.operations.msk.alternateCodes.Builder newBuilder(com.maersk.geography.smds.operations.msk.alternateCodes other) {
-    return new com.maersk.geography.smds.operations.msk.alternateCodes.Builder(other);
+    if (other == null) {
+      return new com.maersk.geography.smds.operations.msk.alternateCodes.Builder();
+    } else {
+      return new com.maersk.geography.smds.operations.msk.alternateCodes.Builder(other);
+    }
   }
 
   /**
    * RecordBuilder for alternateCodes instances.
    */
+  @org.apache.avro.specific.AvroGenerated
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<alternateCodes>
     implements org.apache.avro.data.RecordBuilder<alternateCodes> {
 
@@ -161,7 +195,7 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
 
     /** Creates a new Builder */
     private Builder() {
-      super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
     }
 
     /**
@@ -172,11 +206,11 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
       super(other);
       if (isValidValue(fields()[0], other.codeType)) {
         this.codeType = data().deepCopy(fields()[0].schema(), other.codeType);
-        fieldSetFlags()[0] = true;
+        fieldSetFlags()[0] = other.fieldSetFlags()[0];
       }
       if (isValidValue(fields()[1], other.code)) {
         this.code = data().deepCopy(fields()[1].schema(), other.code);
-        fieldSetFlags()[1] = true;
+        fieldSetFlags()[1] = other.fieldSetFlags()[1];
       }
     }
 
@@ -185,7 +219,7 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
      * @param other The existing instance to copy.
      */
     private Builder(com.maersk.geography.smds.operations.msk.alternateCodes other) {
-            super(SCHEMA$);
+      super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.codeType)) {
         this.codeType = data().deepCopy(fields()[0].schema(), other.codeType);
         fieldSetFlags()[0] = true;
@@ -203,6 +237,7 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
     public java.lang.CharSequence getCodeType() {
       return codeType;
     }
+
 
     /**
       * Sets the value of the 'codeType' field.
@@ -243,6 +278,7 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
       return code;
     }
 
+
     /**
       * Sets the value of the 'code' field.
       * @param value The value of 'code'.
@@ -282,6 +318,8 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
         record.codeType = fieldSetFlags()[0] ? this.codeType : (java.lang.CharSequence) defaultValue(fields()[0]);
         record.code = fieldSetFlags()[1] ? this.code : (java.lang.CharSequence) defaultValue(fields()[1]);
         return record;
+      } catch (org.apache.avro.AvroMissingFieldException e) {
+        throw e;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
@@ -306,4 +344,51 @@ public class alternateCodes extends org.apache.avro.specific.SpecificRecordBase 
     READER$.read(this, SpecificData.getDecoder(in));
   }
 
+  @Override protected boolean hasCustomCoders() { return true; }
+
+  @Override public void customEncode(org.apache.avro.io.Encoder out)
+    throws java.io.IOException
+  {
+    out.writeString(this.codeType);
+
+    out.writeString(this.code);
+
+  }
+
+  @Override public void customDecode(org.apache.avro.io.ResolvingDecoder in)
+    throws java.io.IOException
+  {
+    org.apache.avro.Schema.Field[] fieldOrder = in.readFieldOrderIfDiff();
+    if (fieldOrder == null) {
+      this.codeType = in.readString(this.codeType instanceof Utf8 ? (Utf8)this.codeType : null);
+
+      this.code = in.readString(this.code instanceof Utf8 ? (Utf8)this.code : null);
+
+    } else {
+      for (int i = 0; i < 2; i++) {
+        switch (fieldOrder[i].pos()) {
+        case 0:
+          this.codeType = in.readString(this.codeType instanceof Utf8 ? (Utf8)this.codeType : null);
+          break;
+
+        case 1:
+          this.code = in.readString(this.code instanceof Utf8 ? (Utf8)this.code : null);
+          break;
+
+        default:
+          throw new java.io.IOException("Corrupt ResolvingDecoder.");
+        }
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+

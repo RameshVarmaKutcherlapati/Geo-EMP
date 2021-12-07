@@ -1,20 +1,30 @@
 package net.apmm.mdm.ops.geo.dao;
 
+import lombok.SneakyThrows;
 import net.apmm.mdm.ops.geo.dao.model.GeographyData;
 import org.springframework.jdbc.core.RowMapper;
 import net.apmm.mdm.ops.geo.util.DatetoLong;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.text.ParseException;
+import java.time.Instant;
 
 public class GeographyMapper implements RowMapper<GeographyData> {
 
     DatetoLong dl = new DatetoLong();
 
+
+
+
+
+    @SneakyThrows
     @Override
     public GeographyData mapRow(ResultSet resultSet, int i) throws SQLException {
-        try {
+
+        DatetoLong dl = new DatetoLong();
+
         return GeographyData.builder().geoRowID(resultSet.getString("geoRowID"))
                 .geoId(resultSet.getString("geoId"))
                 .geoType(resultSet.getString("geoType"))
@@ -50,10 +60,6 @@ public class GeographyMapper implements RowMapper<GeographyData> {
                 .bdaType(resultSet.getString("bdaType"))
                 .hsudName(resultSet.getString("hsudName"))
                 .build();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
 
-        return null;
     }
 }

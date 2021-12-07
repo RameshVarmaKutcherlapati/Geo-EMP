@@ -14,7 +14,8 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 
-
+import java.sql.Timestamp;
+import java.time.Instant;
 import java.util.*;
 
 import java.util.stream.Collectors;
@@ -74,20 +75,22 @@ public class PublishGeographyService {
 
         parent geographyParent = new parent();
 
+        //Instant instant = Instant.now();
+
         //geographyInfo.setGeoRowID(geoMsg.getGeographyEntity().getGeographyData().getGeoRowID());
         geographyInfo.setGeoId(geoMsg.getGeographyData().getGeoId());
         geographyInfo.setGeoType(geoMsg.getGeographyData().getGeoType());
         geographyInfo.setName(geoMsg.getGeographyData().getName());
         geographyInfo.setStatus(geoMsg.getGeographyData().getStatus());
-        geographyInfo.setValidFrom(geoMsg.getGeographyData().getValidFrom());
-        geographyInfo.setValidTo(geoMsg.getGeographyData().getValidTo());
+        geographyInfo.setValidFrom(Instant.ofEpochMilli(geoMsg.getGeographyData().getValidFrom()));
+        geographyInfo.setValidTo(Instant.ofEpochMilli(geoMsg.getGeographyData().getValidTo()));
         geographyInfo.setLongitude(geoMsg.getGeographyData().getLongitude());
         geographyInfo.setLatitude(geoMsg.getGeographyData().getLatitude());
         geographyInfo.setTimeZone(geoMsg.getGeographyData().getTimeZone());
         geographyInfo.setDaylightSavingTime(geoMsg.getGeographyData().getDaylightSavingTime());
         geographyInfo.setUtcOffsetMinutes(geoMsg.getGeographyData().getUtcOffsetMinutes());
-        geographyInfo.setDaylightSavingStart(geoMsg.getGeographyData().getDaylightSavingStart());
-        geographyInfo.setDaylightSavingEnd(geoMsg.getGeographyData().getDaylightSavingEnd());
+        geographyInfo.setDaylightSavingStart(Instant.ofEpochMilli(geoMsg.getGeographyData().getDaylightSavingStart()));
+        geographyInfo.setDaylightSavingEnd(Instant.ofEpochMilli(geoMsg.getGeographyData().getDaylightSavingEnd()));
         geographyInfo.setDaylightSavingShiftMinutes(geoMsg.getGeographyData().getDaylightSavingShiftMinutes());
         geographyInfo.setDescription(geoMsg.getGeographyData().getDescription());
         geographyInfo.setWorkaroundReason(geoMsg.getGeographyData().getWorkaroundReason());

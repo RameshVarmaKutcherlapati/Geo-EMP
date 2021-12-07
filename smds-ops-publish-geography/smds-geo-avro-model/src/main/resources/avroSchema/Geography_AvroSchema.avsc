@@ -2,29 +2,28 @@
    "namespace": "com.maersk.geography.smds.operations.msk",
    "type": "record",
    "name": "geographyMessage",
-   "doc":"The generic avro schema used by publishers to publish events to the enterprise streaming service for Geography interface",
    "fields":[
 
 				 {"name": "geography",
 										"type":
 										{
 												 "type":"record",
-												 "doc":"Geography Entity Information Which includes AltNm,AltCd,fence,Country,Parent,BDA and BDALoc ",
+												 "doc":"Geography Entity Information Which includes subcity,city,state,country,continent and their respective Alternate name and Code Information",
 												 "name":"geography",
 												 "fields":[
 							   {"name":"geoId",    "type":"string"},
                                {"name":"geoType",  "type":"string"},
                                {"name":"name",     "type":"string"},
                                {"name":"status",   "type":"string"},
-                               {"name":"validFrom", "type": {"type":"long", "logicalType": "timestamp-millis" }},
-                               {"name":"validTo",   "type": {"type":"long", "logicalType": "timestamp-millis" }},
+                               {"name":"validFrom", "type":{"type":"long", "logicalType": "timestamp-millis" }},
+                               {"name":"validTo",   "type":{"type":"long", "logicalType": "timestamp-millis" }},
                                {"name":"longitude", "type":["null","string"]},
                                {"name":"latitude", "type":["null","string"]},
                                {"name":"timeZone", "type":["null","string"]},
                                {"name":"daylightSavingTime", "type":["null","string"]},
                                {"name":"utcOffsetMinutes", "type":["null","string"]},
-                               {"name":"daylightSavingStart", "type": {"type":"long", "logicalType": "timestamp-millis" },"default": null},
-                               {"name":"daylightSavingEnd", "type": {"type":"long", "logicalType": "timestamp-millis" },"default": null},
+                               {"name":"daylightSavingStart", "type":["null", {"type":"long", "logicalType": "timestamp-millis" }],"default": null},
+                               {"name":"daylightSavingEnd", "type": ["null", {"type":"long", "logicalType": "timestamp-millis" }],"default": null},
                                {"name":"daylightSavingShiftMinutes", "type":["null","string"]},
                                {"name":"description", "type":["null","string"]},
                                {"name":"workaroundReason", "type":["null","string"]},
@@ -119,7 +118,7 @@
 																		{
 																					"type":"record",
 																					"name":"parent",
-																					"doc":"Parent Details",
+																					"doc":"Display Parent Information.For city Copenghagen  the parent is country Denmark",
 																				   "type": "record",
 																					"fields":[
 																					           {"name":"name", "type":"string"},
@@ -159,7 +158,7 @@
 																					"items":
 																					{
 																					"name":"subCityParent",
-																					"doc":"SubCityParent details",
+																					"doc":"Display Sub City Parent Information.For city Pune the sub cities are like viman nagar and so on",
 																				   "type": "record",
 																					"fields":[
 																					       {"name":"name",      "type":"string"},
@@ -199,7 +198,7 @@
 																					"items":
 																					{
 																					"name":"bda",
-																					"doc":"BDA Details",
+																					"doc":"Display business defined area information. Example : North India,West & Central Asia and so on",
 																				   "type": "record",
 																					"fields":[ 
 																					           {"name":"name", "type":"string"},
@@ -239,7 +238,7 @@
 																					"items":
 																					{
 																					"name":"bdaLocation",
-																					"doc":"BDA Location Details",
+																					"doc":"Display business defined area location and status information. Example : Liberty city",
 																				   "type": "record",
 																					"fields":[ 
 																					       {"name":"name","type":"string"},
