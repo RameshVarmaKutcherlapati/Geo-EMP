@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.sql.Timestamp;
 import java.time.Instant;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 @Data
@@ -15,15 +16,15 @@ public class GeographyData {
     private String geoType;
     private String name;
     private String status;
-    private long validFrom;
-    private long validTo;
+    private LocalDate validFrom;
+    private LocalDate validTo;
     private String longitude;
     private String latitude;
     private String timeZone;
     private String daylightSavingTime;
     private String utcOffsetMinutes;
-    private long daylightSavingStart;
-    private long daylightSavingEnd;
+    private LocalDate daylightSavingStart;
+    private LocalDate daylightSavingEnd;
     private String daylightSavingShiftMinutes;
     private String description;
     private String workaroundReason;

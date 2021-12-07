@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.time.Instant;
+import java.time.LocalDate;
 
 public class GeographyMapper implements RowMapper<GeographyData> {
 
@@ -25,20 +26,22 @@ public class GeographyMapper implements RowMapper<GeographyData> {
 
         DatetoLong dl = new DatetoLong();
 
-        return GeographyData.builder().geoRowID(resultSet.getString("geoRowID"))
+        System.out.println("Ramesh:"+resultSet.getDate("validFrom"));
+
+            return GeographyData.builder().geoRowID(resultSet.getString("geoRowID"))
                 .geoId(resultSet.getString("geoId"))
                 .geoType(resultSet.getString("geoType"))
                 .name(resultSet.getString("name"))
                 .status(resultSet.getString("status"))
-                .validFrom(resultSet.getDate("validFrom")!=null? dl.DatetoLongConv(resultSet.getDate("validFrom")) : 0)
-                .validTo(resultSet.getDate("validTo")!=null? dl.DatetoLongConv(resultSet.getDate("validTo")) : 0)
+                .validFrom(resultSet.getDate("validFrom").toLocalDate())
+                .validTo(resultSet.getDate("validTo").toLocalDate())
                 .longitude(resultSet.getString("longitude"))
                 .latitude(resultSet.getString("latitude"))
                 .timeZone(resultSet.getString("timeZone"))
                 .daylightSavingTime(resultSet.getString("daylightSavingTime"))
                 .utcOffsetMinutes(resultSet.getString("utcOffsetMinutes"))
-                .daylightSavingStart(resultSet.getDate("daylightSavingStart")!=null? dl.DatetoLongConv(resultSet.getDate("daylightSavingStart")) : 0)
-                .daylightSavingEnd(resultSet.getDate("daylightSavingEnd")!=null? dl.DatetoLongConv(resultSet.getDate("daylightSavingEnd")) : 0)
+                .daylightSavingStart(resultSet.getDate("daylightSavingStart") == null ? null: resultSet.getDate("daylightSavingStart").toLocalDate())
+                .daylightSavingEnd(resultSet.getDate("daylightSavingEnd") == null ? null: resultSet.getDate("daylightSavingEnd").toLocalDate())
                 .daylightSavingShiftMinutes(resultSet.getString("daylightSavingShiftMinutes"))
                 .description(resultSet.getString("description"))
                 .workaroundReason(resultSet.getString("workaroundReason"))

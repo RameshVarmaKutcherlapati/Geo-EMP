@@ -7,9 +7,10 @@ import java.text.SimpleDateFormat;
 
 public class DatetoLong {
 
-    public long DatetoLongConv(Date dt) throws ParseException {
+    public int DatetoLongConv(Date dt) throws ParseException {
         long l = dt.getTime();
-        return l;
+        int i = (int) l;
+        return i;
 
     }
 }
