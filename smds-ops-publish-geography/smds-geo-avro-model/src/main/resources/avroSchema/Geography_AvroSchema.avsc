@@ -11,31 +11,31 @@
 												 "doc":"Geography Entity Information Which includes subcity,city,state,country,continent and their respective Alternate name and Code Information",
 												 "name":"geography",
 												 "fields":[
-							   {"name":"geoId",    "type":"string"},
-                               {"name":"geoType",  "type":"string"},
-                               {"name":"name",     "type":"string"},
-                               {"name":"status",   "type":"string"},
-                               {"name":"validFrom", "type":{"type":"int", "logicalType": "date" }},
-                               {"name":"validTo",   "type":{"type":"int", "logicalType": "date" }},
-                               {"name":"longitude", "type":["null","string"]},
-                               {"name":"latitude", "type":["null","string"]},
-                               {"name":"timeZone", "type":["null","string"]},
-                               {"name":"daylightSavingTime", "type":["null","string"]},
-                               {"name":"utcOffsetMinutes", "type":["null","string"]},
-                               {"name":"daylightSavingStart", "type":["null", {"type":"int", "logicalType": "date" }],"default": null},
-                               {"name":"daylightSavingEnd", "type": ["null", {"type":"int", "logicalType": "date" }],"default": null},
-                               {"name":"daylightSavingShiftMinutes", "type":["null","string"]},
-                               {"name":"description", "type":["null","string"]},
-                               {"name":"workaroundReason", "type":["null","string"]},
-                               {"name":"restricted", "type":["null","string"]},
-                               {"name":"postalCodeMandatory",  "type":["null","string"]},
-                               {"name":"stateProvienceMandatory",  "type":["null","string"]},
-                               {"name":"dialingCode",  "type":["null","string"]},
-                               {"name":"dialingCodeDescription",  "type":["null","string"]},
-                               {"name":"portFlag", "type":"boolean","default" : false},
-                               {"name":"olsonTimezone",  "type":["null","string"]},
-                               {"name":"bdaType", "type":["null","string"]},
-                               {"name":"hsudName", "type":["null","string"]},
+							   {"doc": "The geoId of Geography object. Example: Pune city GeoId is 00ADIYBEC5L6N","name":"geoId",    "type":"string"},
+                               {"doc": "The geoType of Geography object. Example: For Copenhagen city GeoType is City","name":"geoType",  "type":"string"},
+                               {"doc": "The name of Geography object. Example: Copenhagen","name":"name",     "type":"string"},
+                               {"doc": "The status of Geography object. Example: Active or Inactive","name":"status",   "type":"string"},
+                               {"doc": "The Valid fromdate of Geography object. Example: 1900-01-01","name":"validFrom", "type":{"type":"int", "logicalType": "date" }},
+                               {"doc": "The Valid todate of Geography object. Example: 9999-12-31","name":"validTo",   "type":{"type":"int", "logicalType": "date" }},
+                               {"doc": "The longitude of Geography object. Example: 73.859301","name":"longitude", "type":["null","string"]},
+                               {"doc": "The latitude of Geography object. Example: 18.531206","name":"latitude", "type":["null","string"]},
+                               {"doc": "The time zone of Geography object .Example: EST","name":"timeZone", "type":["null","string"]},
+                               {"doc": "The day light saving time of Geography object. Example: EDT","name":"daylightSavingTime", "type":["null","string"]},
+                               {"doc": "The utc offset minutes  of Geography object. Example: -360","name":"utcOffsetMinutes", "type":["null","string"]},
+                               {"doc": "The recent day light saving start date of Geography object. Example: 03-10-21","name":"daylightSavingStart", "type":["null", {"type":"int", "logicalType": "date" }],"default": null},
+                               {"doc": "The recent day light saving end date of Geography object. Example: 03-04-22","name":"daylightSavingEnd", "type": ["null", {"type":"int", "logicalType": "date" }],"default": null},
+                               {"doc": "The day light saving shift minutes of Geography object. Example: 60","name":"daylightSavingShiftMinutes", "type":["null","string"]},
+                               {"doc": "The description of Geography object. Example: Olson update","name":"description", "type":["null","string"]},
+                               {"doc": "The work around reason of  Geography object. Example: US Military routing","name":"workaroundReason", "type":["null","string"]},
+                               {"doc": "The restricted check of country. Example: N","name":"restricted", "type":["null","string"]},
+                               {"doc": "The postal code mandatory check of country. Example: N","name":"postalCodeMandatory",  "type":["null","string"]},
+                               {"doc": "The state provience  mandatory check of country. Example: N","name":"stateProvienceMandatory",  "type":["null","string"]},
+                               {"doc": "The dialing code  of country. Example: 251","name":"dialingCode",  "type":["null","string"]},
+                               {"doc": "The dialing code description of country. Example: +251","name":"dialingCodeDescription",  "type":["null","string"]},
+                               {"doc": "The port flag of geography object. Example: true or false","name":"portFlag", "type":"boolean","default" : false},
+                               {"doc": "The olson timezone  of geography object. Example: Europe/London","name":"olsonTimezone",  "type":["null","string"]},
+                               {"doc": "The business defined area type of  geography object. Example: FINANCIAL,POOL","name":"bdaType", "type":["null","string"]},
+                               {"doc": "The hamburgsud name of  geography object. Example: Pune","name":"hsudName", "type":["null","string"]},
                                {"name":"alternateNames",
 																		"type":[
 																		"null",																		
@@ -43,13 +43,13 @@
 																					"type":"array",
 																					"items":
 																					{
-																					"name":"alternateNames",
+																					"name":"alternateName",
 																					"doc":"AlternateNames Details",
 																				   "type": "record",
 																					"fields":[ 
-																							   {"name":"name",       "type":"string"},
-																							   {"name":"description", "type":["null","string"]},
-																							   {"name":"status",      "type":"string"}
+																							   {"doc": "The alternate name of  geography object. Example: ICD PUNE", "name":"name",       "type":"string"},
+																							   {"doc": "The alternate name description of  geography object. Example: ICD PUNE", "name":"description", "type":["null","string"]},
+																							   {"doc": "The status of  geography object. Example: ACTIVE OR INACTIVE","name":"status",      "type":"string"}
 																							  ]
 																				    }
 																				  }
@@ -62,19 +62,19 @@
 																					"type":"array",
 																					"items":
 																					{
-																					"name":"alternateCodes",
+																					"name":"alternateCode",
 																					"doc":"AlternateCodes Details",
 																				   "type": "record",
 																					"fields":[ 
-																							   {"name":"codeType",  "type":"string"},
-																							   {"name":"code",      "type":"string"}
+																							   {"doc": "The alternate code type of  geography object. Example: RKTS,RKST,GEOID","name":"codeType",  "type":"string"},
+																							   {"doc": "The alternate code value of  geography object. Example: INPNQ00","name":"code",      "type":"string"}
 																							  ]
 																				    }
 																				  }
 																				 	
 																				
 															 },
-															 	{"name":"country",
+															 	{"name":"countries",
 																		"type":[
 																		"null",																		
 																		{
@@ -85,8 +85,8 @@
 																					"doc":"Country Details",
 																				   "type": "record",
 																					"fields":[ 
-																					           {"name":"name",  "type":"string"},
-																							   {"name":"type",  "type":"string"},
+																					           {"doc": "The name of country. Example: India","name":"name",  "type":"string"},
+																							   {"doc": "The code type of country. Example: GDA.COUNTRY","name":"type",  "type":"string"},
 																							   {"name":"alternateCodes",
 																		"type":[
 																		"null",																		
@@ -94,12 +94,12 @@
 																					"type":"array",
 																					"items":
 																					{
-																					"name":"countryAlternateCodes",
+																					"name":"countryAlternateCode",
 																					"doc":"Country AlternateCode Details",
 																				   "type": "record",
 																					"fields":[ 
-																							   {"name":"codeType", "type":"string"},
-																							   {"name":"code", "type":"string"}
+																							   {"doc": "The alternate code type of  country. Example: RKTS,RKST,GEOID","name":"codeType", "type":"string"},
+																							   {"doc": "The alternate code value of  country. Example: INPNQ00","name":"code", "type":"string"}
 																							  
 																							  ]
 																				    }
@@ -121,9 +121,9 @@
 																					"doc":"Display Parent Information.For city Copenghagen  the parent is country Denmark",
 																				   "type": "record",
 																					"fields":[
-																					           {"name":"name", "type":"string"},
-																							   {"name":"type", "type":"string"},
-																							   {"name":"bdaType",  "type":["null","string"]},
+																					           {"doc": "The parent name of geography object. Example: MAHARASHTRA","name":"name", "type":"string"},
+																							   {"doc": "The parent type of geography object. Example: State/Prov","name":"type", "type":"string"},
+																							   {"doc": "The business defined area type of geography object. Example: FINANCIAL,POOL","name":"bdaType",  "type":["null","string"]},
 																							   {"name":"alternateCodes",
 																		"type":[
 																		"null",																		
@@ -135,8 +135,8 @@
 																					"doc":"Parent AlternateCode details",
 																				   "type": "record",
 																					"fields":[ 
-																							   {"name":"codeType",       "type":"string"},
-																							   {"name":"code", "type":"string"}
+																							   {"doc": "The alternate code type of  parent object. Example: RKTS,RKST,GEOID","name":"codeType",       "type":"string"},
+																							   {"doc": "The alternate code value of  parent object. Example: INPNQ00","name":"code", "type":"string"}
 																							  
 																							  ]
 																				    }
@@ -150,7 +150,7 @@
 																				 	
 
 															 },
-															 {"name":"subCityParent",
+															 {"name":"subCityParents",
 																		"type":[
 																		"null",																		
 																		{
@@ -161,9 +161,9 @@
 																					"doc":"Display Sub City Parent Information.For city Pune the sub cities are like viman nagar and so on",
 																				   "type": "record",
 																					"fields":[
-																					       {"name":"name",      "type":"string"},
-																							   {"name":"type",  "type":"string"},
-																							   {"name":"bdaType",  "type":["null","string"]},
+																					           {"doc": "The sub city name of city. Example: viman nagar","name":"name",      "type":"string"},
+																							   {"doc": "The sub city parent type of city. Example: city","name":"type",  "type":"string"},
+																							   {"doc": "The business defined area type of geography object. Example: FINANCIAL,POOL","name":"bdaType",  "type":["null","string"]},
 																							   {"name":"alternateCodes",
 																		"type":[
 																		"null",																		
@@ -175,8 +175,8 @@
 																					"doc":"SubCityParent AlternateCode details",
 																				   "type": "record",
 																					"fields":[ 
-																							   {"name":"codeType",       "type":"string"},
-																							   {"name":"code", "type":"string"}
+																							   {"doc": "The alternate code type of subcity. Example: RKTS,RKST,GEOID","name":"codeType",       "type":"string"},
+																							   {"doc": "The alternate value type of subcity. Example: INPNQ00","name":"code", "type":"string"}
 																							  
 																							  ]
 																				    }
@@ -190,7 +190,7 @@
 																				 	
 																				]
 															 },
-															 {"name":"bda",
+															 {"name":"bdas",
 																		"type":[
 																		"null",																		
 																		{
@@ -201,9 +201,9 @@
 																					"doc":"Display business defined area information. Example : North India,West & Central Asia and so on",
 																				   "type": "record",
 																					"fields":[ 
-																					           {"name":"name", "type":"string"},
-																							   {"name":"type", "type":"string"},
-																							   {"name":"bdaType", "type":"string"},
+																					           {"doc": "The business defined area  of geography object. Example: North India","name":"name", "type":"string"},
+																							   {"doc": "The type of geography object. Example: Business Defined Area","name":"type", "type":"string"},
+																							   {"doc": "The business defined area type of geography object. Example: FINANCIAL,POOL","name":"bdaType", "type":"string"},
 																							   {"name":"alternateCodes",
 																		"type":[
 																		"null",																		
@@ -215,8 +215,8 @@
 																					"doc":"BDA AlternateCode details",
 																				   "type": "record",
 																					"fields":[ 
-																							   {"name":"codeType",       "type":"string"},
-																							   {"name":"code", "type":"string"}
+																							   {"doc": "The  alternate code type of business defined area. Example: RKTS,RKST,GEOID","name":"codeType",       "type":"string"},
+																							   {"doc": "The  alternate code value of business defined area. Example: INPNQ00","name":"code", "type":"string"}
 																							  
 																							  ]
 																				    }
@@ -241,9 +241,9 @@
 																					"doc":"Display business defined area location and status information. Example : Liberty city",
 																				   "type": "record",
 																					"fields":[ 
-																					       {"name":"name","type":"string"},
-																							   {"name":"type", "type":"string"},
-																							   {"name":"status", "type":"string"},
+																					           {"doc": "The business defined area location  of geography object. Example: Pune","name":"name","type":"string"},
+																							   {"doc": "The business defined area location type of geography object. Example: city or site","name":"type", "type":"string"},
+																							   {"doc": "The business defined area location status  of geography object. Example: Active or Inactive","name":"status", "type":"string"},
 																							   {"name":"alternateCodes",
 																		"type":[
 																		"null",																		
@@ -255,8 +255,8 @@
 																					"doc":"BDALocation AlternateCode Details",
 																				   "type": "record",
 																					"fields":[ 
-																							   {"name":"codeType",   "type":"string"},
-																							   {"name":"code", "type":"string"}
+																							   {"doc": "The  alternate code type of business defined area location. Example: RKTS,RKST,GEOID","name":"codeType",   "type":"string"},
+																							   {"doc": "The  alternate code value of business defined area location. Example: INPNQ00","name":"code", "type":"string"}
 																							  
 																							  ]
 																				    }

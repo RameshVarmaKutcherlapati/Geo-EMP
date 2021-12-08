@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 @SpringBootApplication(scanBasePackageClasses = PublishGeographyService.class)
-@EnableAutoConfiguration(exclude = { JmxAutoConfiguration.class, ErrorMvcAutoConfiguration.class, DataSourceAutoConfiguration.class})
+@EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class, DataSourceAutoConfiguration.class})
 @ComponentScan(basePackages = { "net.apmm.mdm.ops.geo.*"} )
 public class GeoPublishServiceApplication {
 

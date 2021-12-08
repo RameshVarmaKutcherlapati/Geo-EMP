@@ -15,10 +15,10 @@ import org.apache.avro.message.SchemaStore;
 /** Country Details */
 @org.apache.avro.specific.AvroGenerated
 public class country extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4520874202996413566L;
+  private static final long serialVersionUID = 1742420520722695830L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"country\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"doc\":\"Country Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"countryAlternateCodes\",\"doc\":\"Country AlternateCode Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"country\",\"namespace\":\"com.maersk.geography.smds.operations.msk\",\"doc\":\"Country Details\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"alternateCodes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"countryAlternateCode\",\"doc\":\"Country AlternateCode Details\",\"fields\":[{\"name\":\"codeType\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"string\"}]}}]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -76,7 +76,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
 
   private java.lang.CharSequence name;
   private java.lang.CharSequence type;
-  private java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> alternateCodes;
+  private java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> alternateCodes;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -91,7 +91,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param type The new value for type
    * @param alternateCodes The new value for alternateCodes
    */
-  public country(java.lang.CharSequence name, java.lang.CharSequence type, java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> alternateCodes) {
+  public country(java.lang.CharSequence name, java.lang.CharSequence type, java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> alternateCodes) {
     this.name = name;
     this.type = type;
     this.alternateCodes = alternateCodes;
@@ -115,7 +115,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
     switch (field$) {
     case 0: name = (java.lang.CharSequence)value$; break;
     case 1: type = (java.lang.CharSequence)value$; break;
-    case 2: alternateCodes = (java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes>)value$; break;
+    case 2: alternateCodes = (java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode>)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -158,7 +158,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
    * Gets the value of the 'alternateCodes' field.
    * @return The value of the 'alternateCodes' field.
    */
-  public java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> getAlternateCodes() {
+  public java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> getAlternateCodes() {
     return alternateCodes;
   }
 
@@ -167,7 +167,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
    * Sets the value of the 'alternateCodes' field.
    * @param value the value to set.
    */
-  public void setAlternateCodes(java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> value) {
+  public void setAlternateCodes(java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> value) {
     this.alternateCodes = value;
   }
 
@@ -214,7 +214,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
 
     private java.lang.CharSequence name;
     private java.lang.CharSequence type;
-    private java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> alternateCodes;
+    private java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> alternateCodes;
 
     /** Creates a new Builder */
     private Builder() {
@@ -345,7 +345,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
       * Gets the value of the 'alternateCodes' field.
       * @return The value.
       */
-    public java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> getAlternateCodes() {
+    public java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> getAlternateCodes() {
       return alternateCodes;
     }
 
@@ -355,7 +355,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'alternateCodes'.
       * @return This builder.
       */
-    public com.maersk.geography.smds.operations.msk.country.Builder setAlternateCodes(java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> value) {
+    public com.maersk.geography.smds.operations.msk.country.Builder setAlternateCodes(java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> value) {
       validate(fields()[2], value);
       this.alternateCodes = value;
       fieldSetFlags()[2] = true;
@@ -388,7 +388,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
         country record = new country();
         record.name = fieldSetFlags()[0] ? this.name : (java.lang.CharSequence) defaultValue(fields()[0]);
         record.type = fieldSetFlags()[1] ? this.type : (java.lang.CharSequence) defaultValue(fields()[1]);
-        record.alternateCodes = fieldSetFlags()[2] ? this.alternateCodes : (java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes>) defaultValue(fields()[2]);
+        record.alternateCodes = fieldSetFlags()[2] ? this.alternateCodes : (java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode>) defaultValue(fields()[2]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
@@ -434,7 +434,7 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
       out.writeArrayStart();
       out.setItemCount(size0);
       long actualSize0 = 0;
-      for (com.maersk.geography.smds.operations.msk.countryAlternateCodes e0: this.alternateCodes) {
+      for (com.maersk.geography.smds.operations.msk.countryAlternateCode e0: this.alternateCodes) {
         actualSize0++;
         out.startItem();
         e0.customEncode(out);
@@ -460,17 +460,17 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
         this.alternateCodes = null;
       } else {
         long size0 = in.readArrayStart();
-        java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> a0 = this.alternateCodes;
+        java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> a0 = this.alternateCodes;
         if (a0 == null) {
-          a0 = new SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCodes>((int)size0, SCHEMA$.getField("alternateCodes").schema().getTypes().get(1));
+          a0 = new SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCode>((int)size0, SCHEMA$.getField("alternateCodes").schema().getTypes().get(1));
           this.alternateCodes = a0;
         } else a0.clear();
-        SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCodes> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCodes>)a0 : null);
+        SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCode> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCode>)a0 : null);
         for ( ; 0 < size0; size0 = in.arrayNext()) {
           for ( ; size0 != 0; size0--) {
-            com.maersk.geography.smds.operations.msk.countryAlternateCodes e0 = (ga0 != null ? ga0.peek() : null);
+            com.maersk.geography.smds.operations.msk.countryAlternateCode e0 = (ga0 != null ? ga0.peek() : null);
             if (e0 == null) {
-              e0 = new com.maersk.geography.smds.operations.msk.countryAlternateCodes();
+              e0 = new com.maersk.geography.smds.operations.msk.countryAlternateCode();
             }
             e0.customDecode(in);
             a0.add(e0);
@@ -495,17 +495,17 @@ public class country extends org.apache.avro.specific.SpecificRecordBase impleme
             this.alternateCodes = null;
           } else {
             long size0 = in.readArrayStart();
-            java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCodes> a0 = this.alternateCodes;
+            java.util.List<com.maersk.geography.smds.operations.msk.countryAlternateCode> a0 = this.alternateCodes;
             if (a0 == null) {
-              a0 = new SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCodes>((int)size0, SCHEMA$.getField("alternateCodes").schema().getTypes().get(1));
+              a0 = new SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCode>((int)size0, SCHEMA$.getField("alternateCodes").schema().getTypes().get(1));
               this.alternateCodes = a0;
             } else a0.clear();
-            SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCodes> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCodes>)a0 : null);
+            SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCode> ga0 = (a0 instanceof SpecificData.Array ? (SpecificData.Array<com.maersk.geography.smds.operations.msk.countryAlternateCode>)a0 : null);
             for ( ; 0 < size0; size0 = in.arrayNext()) {
               for ( ; size0 != 0; size0--) {
-                com.maersk.geography.smds.operations.msk.countryAlternateCodes e0 = (ga0 != null ? ga0.peek() : null);
+                com.maersk.geography.smds.operations.msk.countryAlternateCode e0 = (ga0 != null ? ga0.peek() : null);
                 if (e0 == null) {
-                  e0 = new com.maersk.geography.smds.operations.msk.countryAlternateCodes();
+                  e0 = new com.maersk.geography.smds.operations.msk.countryAlternateCode();
                 }
                 e0.customDecode(in);
                 a0.add(e0);

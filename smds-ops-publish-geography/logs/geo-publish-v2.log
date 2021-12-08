@@ -1,14 +1,10 @@
-Application started with classpath: unknown
-Starting GeoPublishServiceApplication on INN5CG83311DW with PID 114060 (C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes started by RVK017 in C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography)
-Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+Starting GeoPublishServiceApplication using Java 11.0.2 on INN5CG83311DW with PID 11284 (C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes started by RVK017 in C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography)
+Running with Spring Boot v2.6.1, Spring v5.3.13
 No active profile set, falling back to default profiles: default
 Loading source class net.apmm.mdm.ops.geo.GeoPublishServiceApplication
-Loaded config file 'file:/C:/Users/RVK017/Downloads/Geo_code-main/GEO%20PUBLISH%20V2/smds-ops-publish-geography/geo-publish-service/target/classes/application.yml' (classpath:/application.yml)
-Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511
 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
-Found key 'maersk.deployment.environment' in PropertySource 'configurationProperties' with value of type String
-Found key 'maersk.deployment.environment' in PropertySource 'configurationProperties' with value of type String
 Identified candidate component class: file [C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes\net\apmm\mdm\ops\geo\config\LocalDatabaseConfig.class]
 Identified candidate component class: file [C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes\net\apmm\mdm\ops\geo\config\ProducerKafkaConfig.class]
 Identified candidate component class: file [C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes\net\apmm\mdm\ops\geo\config\QueriesConfiguration.class]
@@ -29,16 +25,10 @@ Identified candidate component class: file [C:\Users\RVK017\Downloads\Geo_code-m
 Identified candidate component class: file [C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes\net\apmm\mdm\ops\geo\dao\GeographySubCityParentAltCdDaoImpl.class]
 Identified candidate component class: file [C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes\net\apmm\mdm\ops\geo\dao\GeographySubCityParentDaoImpl.class]
 Identified candidate component class: file [C:\Users\RVK017\Downloads\Geo_code-main\GEO PUBLISH V2\smds-ops-publish-geography\geo-publish-service\target\classes\net\apmm\mdm\ops\geo\service\PublishGeographyService.class]
-Found key 'maersk.deployment.environment' in PropertySource 'configurationProperties' with value of type String
-Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
-Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
-Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
-Found key 'maersk.deployment.environment' in PropertySource 'configurationProperties' with value of type String
-Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
-Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
 Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
-Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator'
+Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
 Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+Creating shared instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
 Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
@@ -48,12 +38,13 @@ Creating shared instance of singleton bean 'org.springframework.boot.context.int
 Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
 Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
 Creating shared instance of singleton bean 'org.springframework.kafka.config.internalKafkaListenerAnnotationProcessor'
+Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
 Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
 Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
 Creating shared instance of singleton bean 'healthEndpointGroupsBeanPostProcessor'
 Creating shared instance of singleton bean 'meterRegistryPostProcessor'
-Autowiring by type from bean name 'meterRegistryPostProcessor' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
-Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@326d27ac]
+Autowiring by type from bean name 'meterRegistryPostProcessor' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
+Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@6af91cc8]
 Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
 Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
@@ -72,16 +63,16 @@ Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory
 Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
 Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
-Code archive: C:\Users\RVK017\.m2\repository\org\springframework\boot\spring-boot\2.3.1.RELEASE\spring-boot-2.3.1.RELEASE.jar
-Code archive: C:\Users\RVK017\.m2\repository\org\springframework\boot\spring-boot\2.3.1.RELEASE\spring-boot-2.3.1.RELEASE.jar
+Code archive: C:\Users\RVK017\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
+Code archive: C:\Users\RVK017\.m2\repository\org\springframework\boot\spring-boot\2.6.1\spring-boot-2.6.1.jar
 None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
 Tomcat initialized with port(s): 8080 (http)
 Initializing ProtocolHandler ["http-nio-8080"]
 Starting service [Tomcat]
-Starting Servlet engine: [Apache Tomcat/9.0.36]
+Starting Servlet engine: [Apache Tomcat/9.0.55]
 Initializing Spring embedded WebApplicationContext
 Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-Root WebApplicationContext: initialization completed in 2191 ms
+Root WebApplicationContext: initialization completed in 2326 ms
 Creating shared instance of singleton bean 'dispatcherServletRegistration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
 Creating shared instance of singleton bean 'dispatcherServlet'
@@ -116,6 +107,7 @@ Creating shared instance of singleton bean 'metricsHttpServerUriTagFilter'
 Creating shared instance of singleton bean 'jvmGcMetrics'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.JvmMetricsAutoConfiguration'
 Using SLF4J as the default logging framework
+Creating shared instance of singleton bean 'jvmHeapPressureMetrics'
 Creating shared instance of singleton bean 'jvmMemoryMetrics'
 Creating shared instance of singleton bean 'jvmThreadMetrics'
 Creating shared instance of singleton bean 'classLoaderMetrics'
@@ -125,6 +117,8 @@ Creating shared instance of singleton bean 'uptimeMetrics'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.SystemMetricsAutoConfiguration'
 Creating shared instance of singleton bean 'processorMetrics'
 Creating shared instance of singleton bean 'fileDescriptorMetrics'
+Creating shared instance of singleton bean 'diskSpaceMetrics'
+Autowiring by type from bean name 'diskSpaceMetrics' via factory method to bean named 'management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties'
 Creating shared instance of singleton bean 'webMvcTagsProvider'
 Autowiring by type from bean name 'webMvcMetricsFilter' via factory method to bean named 'simpleMeterRegistry'
 Autowiring by type from bean name 'webMvcMetricsFilter' via factory method to bean named 'webMvcTagsProvider'
@@ -133,10 +127,10 @@ Creating shared instance of singleton bean 'org.springframework.boot.actuate.aut
 Creating shared instance of singleton bean 'management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties'
 Creating shared instance of singleton bean 'servletEndpointDiscoverer'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration$WebEndpointServletConfiguration'
-Autowiring by type from bean name 'servletEndpointDiscoverer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'servletEndpointDiscoverer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Creating shared instance of singleton bean 'webEndpointPathMapper'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration'
-Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' via constructor to bean named 'management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties'
 Creating shared instance of singleton bean 'servletExposeExcludePropertyEndpointFilter'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration'
@@ -157,27 +151,21 @@ Filter 'formContentFilter' configured for use
 Creating shared instance of singleton bean 'geoPublishServiceApplication'
 Creating shared instance of singleton bean 'localDatabaseConfig'
 Creating shared instance of singleton bean 'producerKafkaConfig'
-Cannot find '.class' file for class [class net.apmm.mdm.ops.geo.config.ProducerKafkaConfig$$EnhancerBySpringCGLIB$$b0525500] - unable to determine constructor/method parameter names
+Cannot find '.class' file for class [class net.apmm.mdm.ops.geo.config.ProducerKafkaConfig$$EnhancerBySpringCGLIB$$e9b1880c] - unable to determine constructor/method parameter names
 Creating shared instance of singleton bean 'smdsMdJdbcTemplate'
 Creating shared instance of singleton bean 'smdsMdDataSource'
 Loaded JDBC driver: oracle.jdbc.OracleDriver
 Autowiring by type from bean name 'smdsMdJdbcTemplate' via factory method to bean named 'smdsMdDataSource'
 Initializing MD JDBC Template
-Got MdjdbcTemplate ::: org.springframework.jdbc.core.JdbcTemplate@7f42e06e
+Got MdjdbcTemplate ::: org.springframework.jdbc.core.JdbcTemplate@5bf9ea6b
 Autowiring by type from bean name 'producerKafkaConfig' via constructor to bean named 'smdsMdJdbcTemplate'
 Creating shared instance of singleton bean 'empPublishGeoConfiguration'
 Creating shared instance of singleton bean 'queriesConfiguration'
-Found key 'kafka.producer.linger' in PropertySource 'configurationProperties' with value of type Integer
 Found key 'kafka.producer.linger' in PropertySource 'environmentProperties' with value of type String
-Found key 'kafka.producer.timeout' in PropertySource 'configurationProperties' with value of type Integer
 Found key 'kafka.producer.timeout' in PropertySource 'environmentProperties' with value of type String
-Found key 'kafka.producer.batch-size' in PropertySource 'configurationProperties' with value of type Integer
 Found key 'kafka.producer.batch-size' in PropertySource 'environmentProperties' with value of type String
-Found key 'kafka.producer.send-buffer' in PropertySource 'configurationProperties' with value of type Integer
 Found key 'kafka.producer.send-buffer' in PropertySource 'environmentProperties' with value of type String
-Found key 'kafka.producer.acks-config' in PropertySource 'configurationProperties' with value of type String
 Found key 'kafka.producer.acks-config' in PropertySource 'environmentProperties' with value of type String
-Found key 'kafka.producer.client-id' in PropertySource 'configurationProperties' with value of type String
 Found key 'kafka.producer.client-id' in PropertySource 'environmentProperties' with value of type String
 Creating shared instance of singleton bean 'publishGeoController'
 Creating shared instance of singleton bean 'publishGeographyService'
@@ -188,7 +176,7 @@ Creating shared instance of singleton bean 'smdsDataSource'
 Loaded JDBC driver: oracle.jdbc.OracleDriver
 Autowiring by type from bean name 'smdsJdbcTemplate' via factory method to bean named 'smdsDataSource'
 Initializing SMDS JDBC Template
-Got jdbcTemplate ::: org.springframework.jdbc.core.JdbcTemplate@37a9b687
+Got jdbcTemplate ::: org.springframework.jdbc.core.JdbcTemplate@33a8c9c9
 Autowiring by type from bean name 'geographyDaoImpl' via constructor to bean named 'smdsJdbcTemplate'
 Creating shared instance of singleton bean 'retrieveGeographyByRowId'
 fileContentSB ::: select GEOROWID                   as geoRowID,
@@ -484,7 +472,6 @@ select D.NAME as codeType ,C.CODE as code from C_GDA_DFND_AREA A
 INNER JOIN C_ALT_CODE C ON C.GDA_DFND_AREA_ROWID=A.ROWID_OBJECT AND C.HUB_STATE_IND=1
 INNER JOIN C_TYP_TYPE D ON D.ROWID_OBJECT=C.TYP_TYPE_ROWID AND D.HUB_STATE_IND=1
 where A.HUB_STATE_IND=1 AND A.ROWID_OBJECT=?
-Found key 'geo-event-details' in PropertySource 'configurationProperties' with value of type String
 Found key 'geo-event-details' in PropertySource 'environmentProperties' with value of type String
 Creating shared instance of singleton bean 'kafkaTemplate'
 Creating shared instance of singleton bean 'producerConfigs'
@@ -492,32 +479,30 @@ Fetching EMP Publish Geo configurations..
 Executing SQL query [select PROPERTY_NAME, PROPERTY_VALUE from OPS_APPLICATION_CONFIG where APPLICATION_NAME = 'EMP_PUBLISH_GEO-V2']
 Fetching JDBC Connection from DataSource
 Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@scrbsmddk002539:1521/SMDSSIT]
-attempt to configure ONS in FanManager failed with oracle.ons.NoServersAvailable: Subscription time out
 Autowiring by type from bean name 'publishGeographyService' via constructor to bean named 'geographyMessageDao'
 Autowiring by type from bean name 'publishGeographyService' via constructor to bean named 'kafkaTemplate'
-Found key 'kafka.topic' in PropertySource 'configurationProperties' with value of type String
 Found key 'kafka.topic' in PropertySource 'environmentProperties' with value of type String
-Found key 'geo-event-details' in PropertySource 'configurationProperties' with value of type String
 Found key 'geo-event-details' in PropertySource 'environmentProperties' with value of type String
 Creating shared instance of singleton bean 'namedSmdsMdJdbcTemplate'
 Autowiring by type from bean name 'namedSmdsMdJdbcTemplate' via factory method to bean named 'smdsMdDataSource'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
-Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
 Creating shared instance of singleton bean 'taskExecutorBuilder'
 Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
 Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
-Creating shared instance of singleton bean 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
-Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
-Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1ce93c18'
+Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@4690f583'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
-Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
 Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
-Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1ce93c18'
+Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@4690f583'
 Creating shared instance of singleton bean 'metricsWebMvcConfigurer'
 Autowiring by type from bean name 'metricsWebMvcConfigurer' via factory method to bean named 'simpleMeterRegistry'
 Autowiring by type from bean name 'metricsWebMvcConfigurer' via factory method to bean named 'webMvcTagsProvider'
@@ -528,41 +513,40 @@ Creating shared instance of singleton bean 'mvcValidator'
 Failed to set up a Bean Validation provider
 javax.validation.NoProviderFoundException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 	at javax.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291) ~[validation-api-2.0.1.Final.jar:?]
-	at org.springframework.validation.beanvalidation.LocalValidatorFactoryBean.afterPropertiesSet(LocalValidatorFactoryBean.java:257) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean.afterPropertiesSet(OptionalValidatorFactoryBean.java:40) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.afterPropertiesSet(ValidatorAdapter.java:83) ~[spring-boot-autoconfigure-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) [spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) [spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) [spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) [spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.validation.beanvalidation.LocalValidatorFactoryBean.afterPropertiesSet(LocalValidatorFactoryBean.java:259) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean.afterPropertiesSet(OptionalValidatorFactoryBean.java:40) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.afterPropertiesSet(ValidatorAdapter.java:84) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) [spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) [spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) [spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) [spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) [spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) [spring-boot-2.6.1.jar:2.6.1]
 	at net.apmm.mdm.ops.geo.GeoPublishServiceApplication.main(GeoPublishServiceApplication.java:24) [classes/:?]
 Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
 Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
@@ -583,9 +567,9 @@ Creating shared instance of singleton bean 'org.springframework.boot.autoconfigu
 Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
 Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
-Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
-Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
 Creating shared instance of singleton bean 'parameterNamesModule'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
@@ -605,31 +589,35 @@ Autowiring by type from bean name 'requestMappingHandlerMapping' via factory met
 Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
 Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
 Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+
+	n.a.m.o.g.c.PublishGeoController:
+	{POST [/opsmdm/geo/publish]}: publishGeographyService(String,String)
 1 mappings in 'requestMappingHandlerMapping'
 Creating shared instance of singleton bean 'welcomePageHandlerMapping'
-Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
 Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-Creating shared instance of singleton bean 'mvcPathMatcher'
+Creating shared instance of singleton bean 'localeResolver'
+Creating shared instance of singleton bean 'themeResolver'
+Creating shared instance of singleton bean 'flashMapManager'
+Creating shared instance of singleton bean 'mvcPatternParser'
 Creating shared instance of singleton bean 'mvcUrlPathHelper'
+Creating shared instance of singleton bean 'mvcPathMatcher'
 Creating shared instance of singleton bean 'viewControllerHandlerMapping'
-Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcPathMatcher'
-Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
 Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
 Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
 Creating shared instance of singleton bean 'beanNameHandlerMapping'
 Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
 Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+'beanNameHandlerMapping' {}
 Creating shared instance of singleton bean 'routerFunctionMapping'
 Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
 Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
 Creating shared instance of singleton bean 'resourceHandlerMapping'
-Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
-Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcPathMatcher'
 Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
 Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
 Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
 Creating shared instance of singleton bean 'defaultServletHandlerMapping'
 Creating shared instance of singleton bean 'handlerFunctionAdapter'
 Creating shared instance of singleton bean 'mvcUriComponentsContributor'
@@ -642,15 +630,18 @@ Autowiring by type from bean name 'handlerExceptionResolver' via factory method 
 ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
 Creating shared instance of singleton bean 'mvcViewResolver'
 Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+Creating shared instance of singleton bean 'viewNameTranslator'
 Creating shared instance of singleton bean 'defaultViewResolver'
 Creating shared instance of singleton bean 'viewResolver'
-Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1ce93c18'
+Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@4690f583'
+Creating shared instance of singleton bean 'viewResolver'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.audit.AuditEventsEndpointAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
 Creating shared instance of singleton bean 'applicationAvailability'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.availability.AvailabilityHealthContributorAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.beans.BeansEndpointAutoConfiguration'
 Creating shared instance of singleton bean 'beansEndpoint'
-Autowiring by type from bean name 'beansEndpoint' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'beansEndpoint' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.cache.CachesEndpointAutoConfiguration'
 Creating shared instance of singleton bean 'cachesEndpoint'
 Creating shared instance of singleton bean 'cachesEndpointWebExtension'
@@ -659,25 +650,17 @@ Creating shared instance of singleton bean 'org.springframework.boot.actuate.aut
 Creating shared instance of singleton bean 'servletWebChildContextFactory'
 Creating shared instance of singleton bean 'managementServletContext'
 Autowiring by type from bean name 'managementServletContext' via factory method to bean named 'management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.LegacyHealthEndpointAdaptersConfiguration'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.LegacyHealthEndpointCompatibilityConfiguration'
-Creating shared instance of singleton bean 'healthAggregator'
-Creating shared instance of singleton bean 'management.health.status-org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorProperties'
-Autowiring by type from bean name 'healthAggregator' via factory method to bean named 'management.health.status-org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorProperties'
-Creating shared instance of singleton bean 'healthIndicatorRegistry'
-Creating shared instance of singleton bean 'healthContributorRegistry'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration'
-Creating shared instance of singleton bean 'healthEndpointGroups'
-Creating shared instance of singleton bean 'healthEndpointProperties'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthEndpointAutoConfiguration'
-Autowiring by type from bean name 'healthEndpointProperties' via factory method to bean named 'management.health.status-org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorProperties'
-Autowiring by type from bean name 'healthEndpointGroups' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
-Autowiring by type from bean name 'healthEndpointGroups' via factory method to bean named 'healthEndpointProperties'
 Creating shared instance of singleton bean 'healthStatusAggregator'
-Autowiring by type from bean name 'healthStatusAggregator' via factory method to bean named 'healthEndpointProperties'
+Creating shared instance of singleton bean 'management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties'
+Autowiring by type from bean name 'healthStatusAggregator' via factory method to bean named 'management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties'
 Creating shared instance of singleton bean 'healthHttpCodeStatusMapper'
-Autowiring by type from bean name 'healthHttpCodeStatusMapper' via factory method to bean named 'healthEndpointProperties'
-Autowiring by type from bean name 'healthContributorRegistry' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'healthHttpCodeStatusMapper' via factory method to bean named 'management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties'
+Creating shared instance of singleton bean 'healthEndpointGroups'
+Autowiring by type from bean name 'healthEndpointGroups' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
+Autowiring by type from bean name 'healthEndpointGroups' via factory method to bean named 'management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties'
+Creating shared instance of singleton bean 'healthContributorRegistry'
+Autowiring by type from bean name 'healthContributorRegistry' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Autowiring by type from bean name 'healthContributorRegistry' via factory method to bean named 'healthEndpointGroups'
 Creating shared instance of singleton bean 'diskSpaceHealthIndicator'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.system.DiskSpaceHealthContributorAutoConfiguration'
@@ -687,62 +670,48 @@ Creating shared instance of singleton bean 'pingHealthContributor'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthContributorAutoConfiguration'
 Creating shared instance of singleton bean 'dbHealthContributor'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration'
-Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration' via constructor to bean named 'smdsDataSource'
-Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration' via constructor to bean named 'smdsMdDataSource'
+Creating shared instance of singleton bean 'management.health.db-org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorProperties'
 Autowiring by type from bean name 'dbHealthContributor' via factory method to bean named 'smdsDataSource'
 Autowiring by type from bean name 'dbHealthContributor' via factory method to bean named 'smdsMdDataSource'
-Autowiring by type from bean name 'healthIndicatorRegistry' via factory method to bean named 'healthContributorRegistry'
+Autowiring by type from bean name 'dbHealthContributor' via factory method to bean named 'management.health.db-org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorProperties'
 Creating shared instance of singleton bean 'healthEndpoint'
 Autowiring by type from bean name 'healthEndpoint' via factory method to bean named 'healthContributorRegistry'
 Autowiring by type from bean name 'healthEndpoint' via factory method to bean named 'healthEndpointGroups'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration'
-Creating shared instance of singleton bean 'healthEndpointWebExtension'
-Autowiring by type from bean name 'healthEndpointWebExtension' via factory method to bean named 'healthContributorRegistry'
-Autowiring by type from bean name 'healthEndpointWebExtension' via factory method to bean named 'healthEndpointGroups'
-Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
-Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
-Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.info.InfoContributorAutoConfiguration'
-Creating shared instance of singleton bean 'envInfoContributor'
-Autowiring by type from bean name 'envInfoContributor' via factory method to bean named 'environment'
-Creating shared instance of singleton bean 'management.info-org.springframework.boot.actuate.autoconfigure.info.InfoContributorProperties'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.info.InfoEndpointAutoConfiguration'
-Creating shared instance of singleton bean 'infoEndpoint'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpointAutoConfiguration'
-Creating shared instance of singleton bean 'conditionsReportEndpoint'
-Autowiring by type from bean name 'conditionsReportEndpoint' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointAutoConfiguration'
-Creating shared instance of singleton bean 'configurationPropertiesReportEndpoint'
-Creating shared instance of singleton bean 'management.endpoint.configprops-org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointProperties'
-Autowiring by type from bean name 'configurationPropertiesReportEndpoint' via factory method to bean named 'management.endpoint.configprops-org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointProperties'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.EndpointAutoConfiguration'
-Creating shared instance of singleton bean 'endpointOperationParameterMapper'
-Creating shared instance of singleton bean 'endpointCachingOperationInvokerAdvisor'
-Autowiring by type from bean name 'endpointCachingOperationInvokerAdvisor' via factory method to bean named 'environment'
-Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration'
-Creating shared instance of singleton bean 'management.endpoints.jmx-org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointProperties'
-Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
-Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration' via constructor to bean named 'management.endpoints.jmx-org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointProperties'
-Creating shared instance of singleton bean 'jmxAnnotationEndpointDiscoverer'
-Autowiring by type from bean name 'jmxAnnotationEndpointDiscoverer' via factory method to bean named 'endpointOperationParameterMapper'
-Creating shared instance of singleton bean 'jmxIncludeExcludePropertyEndpointFilter'
-Creating shared instance of singleton bean 'endpointMediaTypes'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration'
+Creating shared instance of singleton bean 'healthEndpointWebMvcHandlerMapping'
 Creating shared instance of singleton bean 'webEndpointDiscoverer'
+Creating shared instance of singleton bean 'endpointOperationParameterMapper'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.EndpointAutoConfiguration'
+Creating shared instance of singleton bean 'endpointMediaTypes'
 Autowiring by type from bean name 'webEndpointDiscoverer' via factory method to bean named 'endpointOperationParameterMapper'
 Autowiring by type from bean name 'webEndpointDiscoverer' via factory method to bean named 'endpointMediaTypes'
+Creating shared instance of singleton bean 'endpointCachingOperationInvokerAdvisor'
+Autowiring by type from bean name 'endpointCachingOperationInvokerAdvisor' via factory method to bean named 'environment'
 Creating shared instance of singleton bean 'webExposeExcludePropertyEndpointFilter'
-Creating shared instance of singleton bean 'controllerEndpointDiscoverer'
-Creating shared instance of singleton bean 'controllerExposeExcludePropertyEndpointFilter'
-Creating shared instance of singleton bean 'pathMappedEndpoints'
-Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'jmxAnnotationEndpointDiscoverer'
-Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'servletEndpointDiscoverer'
-Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'webEndpointDiscoverer'
-Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'controllerEndpointDiscoverer'
+Autowiring by type from bean name 'healthEndpointWebMvcHandlerMapping' via factory method to bean named 'webEndpointDiscoverer'
+Autowiring by type from bean name 'healthEndpointWebMvcHandlerMapping' via factory method to bean named 'healthEndpointGroups'
+Creating shared instance of singleton bean 'configurationPropertiesReportEndpoint'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointAutoConfiguration'
+Creating shared instance of singleton bean 'management.endpoint.configprops-org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointProperties'
+Autowiring by type from bean name 'configurationPropertiesReportEndpoint' via factory method to bean named 'management.endpoint.configprops-org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointProperties'
 Creating shared instance of singleton bean 'environmentEndpoint'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointAutoConfiguration'
 Creating shared instance of singleton bean 'management.endpoint.env-org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointProperties'
 Autowiring by type from bean name 'environmentEndpoint' via factory method to bean named 'environment'
 Autowiring by type from bean name 'environmentEndpoint' via factory method to bean named 'management.endpoint.env-org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointProperties'
+Creating shared instance of singleton bean 'healthEndpointWebExtension'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration'
+Autowiring by type from bean name 'healthEndpointWebExtension' via factory method to bean named 'healthContributorRegistry'
+Autowiring by type from bean name 'healthEndpointWebExtension' via factory method to bean named 'healthEndpointGroups'
+Creating shared instance of singleton bean 'infoEndpoint'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.info.InfoEndpointAutoConfiguration'
+Creating shared instance of singleton bean 'conditionsReportEndpoint'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpointAutoConfiguration'
+Autowiring by type from bean name 'conditionsReportEndpoint' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
+Creating shared instance of singleton bean 'configurationPropertiesReportEndpointWebExtension'
+Autowiring by type from bean name 'configurationPropertiesReportEndpointWebExtension' via factory method to bean named 'configurationPropertiesReportEndpoint'
+Creating shared instance of singleton bean 'environmentEndpointWebExtension'
+Autowiring by type from bean name 'environmentEndpointWebExtension' via factory method to bean named 'environmentEndpoint'
 Creating shared instance of singleton bean 'loggersEndpoint'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.logging.LoggersEndpointAutoConfiguration'
 Autowiring by type from bean name 'loggersEndpoint' via factory method to bean named 'springBootLoggingSystem'
@@ -757,23 +726,70 @@ Creating shared instance of singleton bean 'scheduledTasksEndpoint'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.scheduling.ScheduledTasksEndpointAutoConfiguration'
 Creating shared instance of singleton bean 'mappingsEndpoint'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.web.mappings.MappingsEndpointAutoConfiguration'
-Autowiring by type from bean name 'mappingsEndpoint' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f31c0c6'
+Autowiring by type from bean name 'mappingsEndpoint' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
 Creating shared instance of singleton bean 'dispatcherServletMappingDescriptionProvider'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.web.mappings.MappingsEndpointAutoConfiguration$ServletWebConfiguration$SpringMvcConfiguration'
 Creating shared instance of singleton bean 'servletMappingDescriptionProvider'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.web.mappings.MappingsEndpointAutoConfiguration$ServletWebConfiguration'
 Creating shared instance of singleton bean 'filterMappingDescriptionProvider'
-Creating shared instance of singleton bean 'environmentEndpointWebExtension'
-Autowiring by type from bean name 'environmentEndpointWebExtension' via factory method to bean named 'environmentEndpoint'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.health.HealthEndpointAutoConfiguration'
+Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.info.InfoContributorAutoConfiguration'
+Creating shared instance of singleton bean 'management.info-org.springframework.boot.actuate.autoconfigure.info.InfoContributorProperties'
+Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to bean named 'environment'
+Creating shared instance of singleton bean 'mbeanExporter'
+Creating shared instance of singleton bean 'objectNamingStrategy'
+Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@4690f583'
+Creating shared instance of singleton bean 'mbeanServer'
+Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@38bc8ab5
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration'
+Creating shared instance of singleton bean 'management.endpoints.jmx-org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointProperties'
+Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e053511'
+Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration' via constructor to bean named 'management.endpoints.jmx-org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointProperties'
+Creating shared instance of singleton bean 'jmxAnnotationEndpointDiscoverer'
+Autowiring by type from bean name 'jmxAnnotationEndpointDiscoverer' via factory method to bean named 'endpointOperationParameterMapper'
+Creating shared instance of singleton bean 'jmxIncludeExcludePropertyEndpointFilter'
+Creating shared instance of singleton bean 'endpointObjectNameFactory'
+Autowiring by type from bean name 'endpointObjectNameFactory' via factory method to bean named 'mbeanServer'
+Autowiring by type from bean name 'endpointObjectNameFactory' via factory method to bean named 'environment'
+Creating shared instance of singleton bean 'jmxMBeanExporter'
+Autowiring by type from bean name 'jmxMBeanExporter' via factory method to bean named 'mbeanServer'
+Autowiring by type from bean name 'jmxMBeanExporter' via factory method to bean named 'endpointObjectNameFactory'
+Autowiring by type from bean name 'jmxMBeanExporter' via factory method to bean named 'jmxAnnotationEndpointDiscoverer'
+Creating shared instance of singleton bean 'eagerlyInitializeJmxEndpointExporter'
+Creating shared instance of singleton bean 'controllerEndpointDiscoverer'
+Creating shared instance of singleton bean 'controllerExposeExcludePropertyEndpointFilter'
+Creating shared instance of singleton bean 'pathMappedEndpoints'
+Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'jmxAnnotationEndpointDiscoverer'
+Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'servletEndpointDiscoverer'
+Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'webEndpointDiscoverer'
+Autowiring by type from bean name 'pathMappedEndpoints' via factory method to bean named 'controllerEndpointDiscoverer'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.logging.LogFileWebEndpointAutoConfiguration'
 Creating shared instance of singleton bean 'management.endpoint.logfile-org.springframework.boot.actuate.autoconfigure.logging.LogFileWebEndpointProperties'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.CompositeMeterRegistryAutoConfiguration'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$KafkaStreamsMetricsConfiguration'
+Creating shared instance of singleton bean 'kafkaStreamsMetrics'
+Autowiring by type from bean name 'kafkaStreamsMetrics' via factory method to bean named 'simpleMeterRegistry'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration'
 Creating shared instance of singleton bean 'kafkaProducerMetrics'
 Autowiring by type from bean name 'kafkaProducerMetrics' via factory method to bean named 'simpleMeterRegistry'
 Creating shared instance of singleton bean 'kafkaConsumerMetrics'
 Autowiring by type from bean name 'kafkaConsumerMetrics' via factory method to bean named 'simpleMeterRegistry'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.integration.IntegrationMetricsAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.jdbc.DataSourcePoolMetricsAutoConfiguration'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.startup.StartupTimeMetricsListenerAutoConfiguration'
+Creating shared instance of singleton bean 'startupTimeMetrics'
+Autowiring by type from bean name 'startupTimeMetrics' via factory method to bean named 'simpleMeterRegistry'
+Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+Creating shared instance of singleton bean 'scheduledBeanLazyInitializationExcludeFilter'
+Creating shared instance of singleton bean 'taskSchedulerBuilder'
+Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.task.TaskExecutorMetricsAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration'
@@ -791,7 +807,6 @@ Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
 Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
 Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
-Autowiring by type from bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1ce93c18'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
@@ -812,12 +827,8 @@ Creating shared instance of singleton bean 'org.springframework.boot.autoconfigu
 Autowiring by type from bean name 'org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration' via constructor to bean named 'spring.kafka-org.springframework.boot.autoconfigure.kafka.KafkaProperties'
 Creating shared instance of singleton bean 'kafkaProducerListener'
 Creating shared instance of singleton bean 'kafkaAdmin'
-Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration'
-Creating shared instance of singleton bean 'spring.security.oauth2.resourceserver-org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties'
-Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
-Creating shared instance of singleton bean 'taskSchedulerBuilder'
-Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
-Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
+Creating shared instance of singleton bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration'
 Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
@@ -845,6 +856,8 @@ Creating shared instance of singleton bean 'org.springframework.boot.actuate.aut
 Autowiring by type from bean name 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$SameManagementContextConfiguration' via constructor to bean named 'environment'
 Creating shared instance of singleton bean 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration'
 Creating shared instance of singleton bean 'management.server-org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties'
+Registering beans for JMX exposure on startup
+Autodetecting user-defined JMX MBeans
 Starting beans in phase 2147483547
 Successfully started bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
 Starting beans in phase 2147483646
@@ -872,10 +885,10 @@ Positive matches:
       - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
 
    AuditEventsEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.auditevents.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    BeansEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.beans.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    BeansEndpointAutoConfiguration#beansEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.beans.BeansEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -885,28 +898,33 @@ Positive matches:
 
    CachesEndpointAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.caches.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    CachesEndpointAutoConfiguration#cachesEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
       - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
 
    CompositeMeterRegistryAutoConfiguration matched:
       - @ConditionalOnClass found required class 'io.micrometer.core.instrument.composite.CompositeMeterRegistry' (OnClassCondition)
 
    ConditionsReportEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.conditions.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    ConditionsReportEndpointAutoConfiguration#conditionsReportEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpoint; SearchStrategy: current) did not find any beans (OnBeanCondition)
 
    ConfigurationPropertiesReportEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.configprops.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
 
    DataSourceHealthContributorAutoConfiguration matched:
       - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource' (OnClassCondition)
@@ -921,7 +939,7 @@ Positive matches:
       - @ConditionalOnBean (types: javax.sql.DataSource,io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found beans 'smdsMdDataSource', 'smdsDataSource', 'simpleMeterRegistry' (OnBeanCondition)
 
    DataSourceTransactionManagerAutoConfiguration matched:
-      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.TransactionManager' (OnClassCondition)
 
    DiskSpaceHealthContributorAutoConfiguration matched:
       - @ConditionalOnEnabledHealthIndicator management.health.defaults.enabled is considered true (OnEnabledHealthIndicatorCondition)
@@ -957,13 +975,14 @@ Positive matches:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.endpoint.invoke.ParameterValueMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    EnvironmentEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.env.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    EnvironmentEndpointAutoConfiguration#environmentEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
       - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
 
    GenericCacheConfiguration matched:
       - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
@@ -972,7 +991,7 @@ Positive matches:
       - @ConditionalOnEnabledHealthIndicator management.health.defaults.enabled is considered true (OnEnabledHealthIndicatorCondition)
 
    HealthEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.health.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    HealthEndpointConfiguration#healthContributorRegistry matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.health.HealthContributorRegistry; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -991,13 +1010,17 @@ Positive matches:
 
    HealthEndpointWebExtensionConfiguration matched:
       - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
       - @ConditionalOnBean (types: org.springframework.boot.actuate.health.HealthEndpoint; SearchStrategy: all) found bean 'healthEndpoint' (OnBeanCondition)
 
    HealthEndpointWebExtensionConfiguration#healthEndpointWebExtension matched:
-      - @ConditionalOnBean (types: org.springframework.boot.actuate.health.HealthEndpoint; SearchStrategy: all) found bean 'healthEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.health.HealthEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.health.HealthEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HealthEndpointWebExtensionConfiguration.MvcAdditionalHealthEndpointPathsConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
 
    HeapDumpWebEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.heapdump.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    HeapDumpWebEndpointAutoConfiguration#heapDumpWebEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.HeapDumpWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1028,13 +1051,10 @@ Positive matches:
       - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    HttpTraceEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.httptrace.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
-
-   InfoContributorAutoConfiguration#envInfoContributor matched:
-      - @ConditionalOnEnabledInfoContributor management.info.defaults.enabled is considered true (OnEnabledInfoContributorCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    InfoEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.info.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    InfoEndpointAutoConfiguration#infoEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.info.InfoEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1071,11 +1091,30 @@ Positive matches:
    JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
       - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.MappingJackson2HttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedMappingJackson2HttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
    JmxEndpointAutoConfiguration matched:
       - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
 
+   JmxEndpointAutoConfiguration#endpointObjectNameFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.endpoint.jmx.EndpointObjectNameFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
    JmxEndpointAutoConfiguration#jmxAnnotationEndpointDiscoverer matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.endpoint.jmx.JmxEndpointsSupplier; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxEndpointAutoConfiguration#jmxMBeanExporter matched:
+      - @ConditionalOnSingleCandidate (types: javax.management.MBeanServer; SearchStrategy: all) found a primary bean from beans 'mbeanServer' (OnBeanCondition)
 
    JvmMetricsAutoConfiguration matched:
       - @ConditionalOnClass found required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
@@ -1086,6 +1125,9 @@ Positive matches:
 
    JvmMetricsAutoConfiguration#jvmGcMetrics matched:
       - @ConditionalOnMissingBean (types: io.micrometer.core.instrument.binder.jvm.JvmGcMetrics; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JvmMetricsAutoConfiguration#jvmHeapPressureMetrics matched:
+      - @ConditionalOnMissingBean (types: io.micrometer.core.instrument.binder.jvm.JvmHeapPressureMetrics; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    JvmMetricsAutoConfiguration#jvmMemoryMetrics matched:
       - @ConditionalOnMissingBean (types: io.micrometer.core.instrument.binder.jvm.JvmMemoryMetrics; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1121,14 +1163,11 @@ Positive matches:
       - @ConditionalOnClass found required classes 'io.micrometer.core.instrument.binder.kafka.KafkaClientMetrics', 'org.springframework.kafka.core.ProducerFactory' (OnClassCondition)
       - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry' (OnBeanCondition)
 
-   LegacyHealthEndpointCompatibilityConfiguration#healthAggregator matched:
-      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.health.HealthAggregator; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-   LegacyHealthEndpointCompatibilityConfiguration#healthIndicatorRegistry matched:
-      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.health.HealthIndicatorRegistry; SearchStrategy: all) did not find any beans (OnBeanCondition)
+   KafkaMetricsAutoConfiguration.KafkaStreamsMetricsConfiguration matched:
+      - @ConditionalOnClass found required classes 'io.micrometer.core.instrument.binder.kafka.KafkaStreamsMetrics', 'org.springframework.kafka.config.StreamsBuilderFactoryBean' (OnClassCondition)
 
    LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
-      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
 
    LocalDatabaseConfig matched:
       - @ConditionalOnProperty (maersk.deployment.environment=local) matched (OnPropertyCondition)
@@ -1142,10 +1181,10 @@ Positive matches:
       - @ConditionalOnMissingBean (types: io.micrometer.core.instrument.binder.logging.Log4j2Metrics; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    LogFileWebEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.logfile.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    LoggersEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.loggers.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    LoggersEndpointAutoConfiguration#loggersEndpoint matched:
       - Logging System enabled (LoggersEndpointAutoConfiguration.OnEnabledLoggingSystemCondition)
@@ -1154,8 +1193,8 @@ Positive matches:
    ManagementContextAutoConfiguration.SameManagementContextConfiguration matched:
       - Management Port actual port type (SAME) matched required type (OnManagementPortCondition)
 
-   MappingsEndpointAutoConfiguration#mappingsEndpoint matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.mappings.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+   MappingsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    MappingsEndpointAutoConfiguration.ServletWebConfiguration matched:
       - found 'session' scope (OnWebApplicationCondition)
@@ -1172,7 +1211,7 @@ Positive matches:
 
    MetricsEndpointAutoConfiguration matched:
       - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.metrics.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    MetricsEndpointAutoConfiguration#metricsEndpoint matched:
       - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.MetricsEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1191,9 +1230,6 @@ Positive matches:
    NoOpCacheConfiguration matched:
       - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
 
-   OAuth2ResourceServerAutoConfiguration matched:
-      - found 'session' scope (OnWebApplicationCondition)
-
    PersistenceExceptionTranslationAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
 
@@ -1211,6 +1247,9 @@ Positive matches:
    RestTemplateAutoConfiguration#restTemplateBuilder matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.web.client.RestTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   RestTemplateAutoConfiguration#restTemplateBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.client.RestTemplateBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
    RestTemplateMetricsConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
       - @ConditionalOnBean (types: org.springframework.boot.web.client.RestTemplateBuilder; SearchStrategy: all) found bean 'restTemplateBuilder' (OnBeanCondition)
@@ -1219,7 +1258,7 @@ Positive matches:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.web.client.RestTemplateExchangeTagsProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    ScheduledTasksEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.scheduledtasks.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    ScheduledTasksEndpointAutoConfiguration#scheduledTasksEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.scheduling.ScheduledTasksEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1249,7 +1288,7 @@ Positive matches:
       - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
 
    SimpleMetricsExportAutoConfiguration matched:
-      - @ConditionalOnProperty (management.metrics.export.simple.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnEnabledMetricsExport management.metrics.export.defaults.enabled is considered true (OnMetricsExportEnabledCondition)
       - @ConditionalOnBean (types: io.micrometer.core.instrument.Clock; SearchStrategy: all) found bean 'micrometerClock'; @ConditionalOnMissingBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    SimpleMetricsExportAutoConfiguration#simpleConfig matched:
@@ -1261,9 +1300,23 @@ Positive matches:
    SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   SqlInitializationAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.sql.init.enabled) matched (OnPropertyCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on SqlInitializationAutoConfiguration.SqlInitializationModeCondition.ModeIsNever @ConditionalOnProperty (spring.sql.init.mode=never) did not find property 'mode' (SqlInitializationAutoConfiguration.SqlInitializationModeCondition)
+
+   StartupTimeMetricsListenerAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
+      - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry' (OnBeanCondition)
+
+   StartupTimeMetricsListenerAutoConfiguration#startupTimeMetrics matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.startup.StartupTimeMetricsListener; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
    SystemMetricsAutoConfiguration matched:
       - @ConditionalOnClass found required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
       - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry' (OnBeanCondition)
+
+   SystemMetricsAutoConfiguration#diskSpaceMetrics matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.system.DiskSpaceMetricsBinder; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    SystemMetricsAutoConfiguration#fileDescriptorMetrics matched:
       - @ConditionalOnMissingBean (types: io.micrometer.core.instrument.binder.system.FileDescriptorMetrics; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1283,6 +1336,10 @@ Positive matches:
    TaskExecutionAutoConfiguration#taskExecutorBuilder matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   TaskExecutorMetricsAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.instrument.binder.jvm.ExecutorServiceMetrics' (OnClassCondition)
+      - @ConditionalOnBean (types: java.util.concurrent.Executor,io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found beans 'applicationTaskExecutor', 'simpleMeterRegistry' (OnBeanCondition)
+
    TaskSchedulingAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
 
@@ -1290,7 +1347,7 @@ Positive matches:
       - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    ThreadDumpEndpointAutoConfiguration matched:
-      - @ConditionalOnAvailableEndpoint no property management.endpoint.threaddump.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.jmx.exposure' property (OnAvailableEndpointCondition)
 
    ThreadDumpEndpointAutoConfiguration#dumpEndpoint matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.ThreadDumpEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1337,6 +1394,15 @@ Positive matches:
    WebMvcAutoConfiguration#formContentFilter matched:
       - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
       - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#themeResolver matched:
+      - @ConditionalOnMissingBean (names: themeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
       - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -1410,9 +1476,17 @@ Negative matches:
       Did not match:
          - @ConditionalOnBean (types: org.springframework.boot.actuate.audit.AuditEventRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.audit.AuditEventRepository (OnBeanCondition)
 
+   AvailabilityHealthContributorAutoConfiguration#livenessStateHealthIndicator:
+      Did not match:
+         - @ConditionalOnProperty (management.health.livenessstate.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+   AvailabilityHealthContributorAutoConfiguration#readinessStateHealthIndicator:
+      Did not match:
+         - @ConditionalOnProperty (management.health.readinessstate.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
    AvailabilityProbesAutoConfiguration:
       Did not match:
-         - Health availability not running on a supported cloud platform (AvailabilityProbesAutoConfiguration.ProbesCondition)
+         - Probes availability not running on a supported cloud platform (AvailabilityProbesAutoConfiguration.ProbesCondition)
 
    BatchAutoConfiguration:
       Did not match:
@@ -1444,6 +1518,10 @@ Negative matches:
    CacheMeterBinderProvidersConfiguration.JCacheCacheMeterBinderProviderConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required classes 'org.springframework.cache.jcache.JCacheCache', 'javax.cache.CacheManager' (OnClassCondition)
+
+   CacheMeterBinderProvidersConfiguration.RedisCacheMeterBinderProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.cache.RedisCache' (OnClassCondition)
 
    CacheMetricsAutoConfiguration:
       Did not match:
@@ -1541,6 +1619,12 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
 
+   DataSourceInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find a primary bean from beans 'smdsMdDataSource', 'smdsDataSource' (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+
    DataSourcePoolMetricsAutoConfiguration.DataSourcePoolMetadataMetricsConfiguration:
       Did not match:
          - @ConditionalOnBean (types: org.springframework.boot.jdbc.metadata.DataSourcePoolMetadataProvider; SearchStrategy: all) did not find any beans of type org.springframework.boot.jdbc.metadata.DataSourcePoolMetadataProvider (OnBeanCondition)
@@ -1549,7 +1633,7 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
 
-   DataSourceTransactionManagerAutoConfiguration.DataSourceTransactionManagerConfiguration:
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration:
       Did not match:
          - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find a primary bean from beans 'smdsMdDataSource', 'smdsDataSource' (OnBeanCondition)
 
@@ -1577,13 +1661,17 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'io.micrometer.elastic.ElasticMeterRegistry' (OnClassCondition)
 
+   ElasticSearchReactiveHealthContributorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
    ElasticSearchRestHealthContributorAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClient' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestHighLevelClient' (OnClassCondition)
 
    ElasticsearchDataAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate' (OnClassCondition)
 
    ElasticsearchRepositoriesAutoConfiguration:
       Did not match:
@@ -1591,7 +1679,7 @@ Negative matches:
 
    ElasticsearchRestClientAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClient' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClientBuilder' (OnClassCondition)
 
    EmbeddedLdapAutoConfiguration:
       Did not match:
@@ -1673,6 +1761,10 @@ Negative matches:
       Did not match:
          - did not find reactive web application classes (OnWebApplicationCondition)
 
+   HealthEndpointWebExtensionConfiguration.JerseyAdditionalHealthEndpointPathsConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.glassfish.jersey.server.ResourceConfig' (OnClassCondition)
+
    HibernateJpaAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'javax.persistence.EntityManager' (OnClassCondition)
@@ -1737,11 +1829,19 @@ Negative matches:
       Matched:
          - @ConditionalOnEnabledInfoContributor management.info.defaults.enabled is considered true (OnEnabledInfoContributorCondition)
 
+   InfoContributorAutoConfiguration#envInfoContributor:
+      Did not match:
+         - @ConditionalOnEnabledInfoContributor management.info.env.enabled is not true (OnEnabledInfoContributorCondition)
+
    InfoContributorAutoConfiguration#gitInfoContributor:
       Did not match:
          - @ConditionalOnSingleCandidate (types: org.springframework.boot.info.GitProperties; SearchStrategy: all) did not find any beans (OnBeanCondition)
       Matched:
          - @ConditionalOnEnabledInfoContributor management.info.defaults.enabled is considered true (OnEnabledInfoContributorCondition)
+
+   InfoContributorAutoConfiguration#javaInfoContributor:
+      Did not match:
+         - @ConditionalOnEnabledInfoContributor management.info.java.enabled is not true (OnEnabledInfoContributorCondition)
 
    IntegrationAutoConfiguration:
       Did not match:
@@ -1779,7 +1879,7 @@ Negative matches:
 
    JerseyServerMetricsAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'io.micrometer.jersey2.server.MetricsApplicationEventListener' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'io.micrometer.core.instrument.binder.jersey.server.MetricsApplicationEventListener' (OnClassCondition)
 
    JerseyWebEndpointManagementContextConfiguration:
       Did not match:
@@ -1796,10 +1896,6 @@ Negative matches:
    JmsHealthContributorAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
-
-   JmxEndpointAutoConfiguration#jmxMBeanExporter:
-      Did not match:
-         - @ConditionalOnSingleCandidate (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    JmxMetricsExportAutoConfiguration:
       Did not match:
@@ -1875,13 +1971,9 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
 
-   LegacyHealthEndpointAdaptersConfiguration#healthAggregatorStatusAggregatorAdapter:
+   LettuceMetricsAutoConfiguration:
       Did not match:
-         - @ConditionalOnBean (types: org.springframework.boot.actuate.health.HealthAggregator; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.health.HealthAggregator (OnBeanCondition)
-
-   LegacyHealthEndpointCompatibilityConfiguration.LegacyReactiveHealthEndpointCompatibilityConfiguration:
-      Did not match:
-         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Mono' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'io.lettuce.core.metrics.MicrometerCommandLatencyRecorder' (OnClassCondition)
 
    LiquibaseAutoConfiguration:
       Did not match:
@@ -1917,7 +2009,9 @@ Negative matches:
 
    ManagementWebSecurityAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass did not find required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
 
    MappingsEndpointAutoConfiguration.ReactiveWebConfiguration:
       Did not match:
@@ -1938,6 +2032,10 @@ Negative matches:
    MongoHealthContributorAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.data.mongodb.core.MongoTemplate' (OnClassCondition)
+
+   MongoMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClientSettings' (OnClassCondition)
 
    MongoReactiveAutoConfiguration:
       Did not match:
@@ -1963,17 +2061,33 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
 
+   Neo4jAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
    Neo4jDataAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.neo4j.ogm.session.SessionFactory' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
 
    Neo4jHealthContributorAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.neo4j.ogm.session.SessionFactory' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
 
    Neo4jRepositoriesAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.neo4j.ogm.session.Neo4jSession' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   NettyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.netty.util.NettyRuntime' (OnClassCondition)
 
    NewRelicMetricsExportAutoConfiguration:
       Did not match:
@@ -1987,13 +2101,9 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
 
-   Oauth2ResourceServerConfiguration.JwtConfiguration:
+   OAuth2ResourceServerAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required classes 'org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken', 'org.springframework.security.oauth2.jwt.JwtDecoder' (OnClassCondition)
-
-   Oauth2ResourceServerConfiguration.OpaqueTokenConfiguration:
-      Did not match:
-         - @ConditionalOnClass did not find required classes 'org.springframework.security.oauth2.server.resource.BearerTokenAuthenticationToken', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.BearerTokenAuthenticationToken' (OnClassCondition)
 
    ProjectInfoAutoConfiguration#buildProperties:
       Did not match:
@@ -2011,13 +2121,21 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
 
+   QuartzEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
    R2dbcAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
 
    R2dbcDataAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.core.DatabaseClient' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.core.R2dbcEntityTemplate' (OnClassCondition)
+
+   R2dbcInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
 
    R2dbcRepositoriesAutoConfiguration:
       Did not match:
@@ -2025,15 +2143,15 @@ Negative matches:
 
    R2dbcTransactionManagerAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.connectionfactory.R2dbcTransactionManager' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.springframework.r2dbc.connection.R2dbcTransactionManager' (OnClassCondition)
 
    RSocketMessagingAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'io.rsocket.RSocketFactory' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
 
    RSocketRequesterAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'io.rsocket.RSocketFactory' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
 
    RSocketSecurityAutoConfiguration:
       Did not match:
@@ -2083,6 +2201,10 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
 
+   ReactiveMultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
    ReactiveOAuth2ClientAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
@@ -2126,6 +2248,10 @@ Negative matches:
    RedisRepositoriesAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RepositoryMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.repository.Repository' (OnClassCondition)
 
    RepositoryRestMvcAutoConfiguration:
       Did not match:
@@ -2181,7 +2307,7 @@ Negative matches:
 
    ShutdownEndpointAutoConfiguration:
       Did not match:
-         - @ConditionalOnAvailableEndpoint no property management.endpoint.shutdown.enabled found so using endpoint default (OnAvailableEndpointCondition)
+         - @ConditionalOnAvailableEndpoint no property management.endpoint.shutdown.enabled found so using endpoint default of false (OnAvailableEndpointCondition)
 
    SignalFxMetricsExportAutoConfiguration:
       Did not match:
@@ -2195,10 +2321,6 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.SolrClient' (OnClassCondition)
 
-   SolrRepositoriesAutoConfiguration:
-      Did not match:
-         - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.SolrClient' (OnClassCondition)
-
    SpringDataWebAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.data.web.PageableHandlerMethodArgumentResolver' (OnClassCondition)
@@ -2206,6 +2328,10 @@ Negative matches:
    StackdriverMetricsExportAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'io.micrometer.stackdriver.StackdriverMeterRegistry' (OnClassCondition)
+
+   StartupEndpointAutoConfiguration:
+      Did not match:
+         - ApplicationStartup configured applicationStartup is of type class org.springframework.core.metrics.DefaultApplicationStartup, expected BufferingApplicationStartup. (StartupEndpointAutoConfiguration.ApplicationStartupCondition)
 
    StatsdMetricsExportAutoConfiguration:
       Did not match:
@@ -2288,9 +2414,9 @@ Negative matches:
       Did not match:
          - @ConditionalOnBean (types: org.springframework.web.servlet.View; SearchStrategy: all) did not find any beans of type org.springframework.web.servlet.View (OnBeanCondition)
 
-   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#localeResolver:
+   WebMvcEndpointManagementContextConfiguration#managementHealthEndpointWebMvcHandlerMapping:
       Did not match:
-         - @ConditionalOnProperty (spring.mvc.locale) did not find property 'locale' (OnPropertyCondition)
+         - Management Port actual port type (SAME) did not match required type (DIFFERENT) (OnManagementPortCondition)
 
    WebServiceTemplateAutoConfiguration:
       Did not match:
@@ -2300,6 +2426,10 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
 
+   WebSessionIdResolverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Mono' (OnClassCondition)
+
    WebSocketMessagingAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
@@ -2307,6 +2437,10 @@ Negative matches:
    WebSocketReactiveAutoConfiguration:
       Did not match:
          - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.Jetty10WebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.websocket.javax.server.internal.JavaxWebSocketServerContainer', 'org.eclipse.jetty.websocket.server.JettyWebSocketServerContainer' (OnClassCondition)
 
    WebSocketServletAutoConfiguration.JettyWebSocketConfiguration:
       Did not match:
@@ -2324,8 +2458,6 @@ Negative matches:
 Exclusions:
 -----------
 
-    org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration
-
     org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration
 
     org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
@@ -2336,6 +2468,8 @@ Unconditional classes:
 
     org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
 
+    org.springframework.boot.actuate.autoconfigure.availability.AvailabilityHealthContributorAutoConfiguration
+
     org.springframework.boot.actuate.autoconfigure.info.InfoContributorAutoConfiguration
 
     org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
@@ -2344,7 +2478,7 @@ Unconditional classes:
 
     org.springframework.boot.actuate.autoconfigure.health.HealthContributorAutoConfiguration
 
-    org.springframework.boot.actuate.autoconfigure.web.mappings.MappingsEndpointAutoConfiguration
+    org.springframework.boot.actuate.autoconfigure.metrics.integration.IntegrationMetricsAutoConfiguration
 
     org.springframework.boot.actuate.autoconfigure.endpoint.EndpointAutoConfiguration
 
@@ -2357,13 +2491,26 @@ Unconditional classes:
 
 
 Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
-Started GeoPublishServiceApplication in 39.442 seconds (JVM running for 42.424)
-Found key 'local.server.port' in PropertySource 'server.ports' with value of type Integer
+Started GeoPublishServiceApplication in 11.383 seconds (JVM running for 14.946)
+Application availability state LivenessState changed to CORRECT
+Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
 Initializing Spring DispatcherServlet 'dispatcherServlet'
 Initializing Servlet 'dispatcherServlet'
 Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a70c8e5
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@233c438a
 enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-Completed initialization in 7 ms
+Completed initialization in 3 ms
+Fetching JDBC Connection from DataSource
+Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@scrbsmddk002539:1521/SMDSSIT]
+Fetching JDBC Connection from DataSource
+Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@scrbsmddk002539:1521/SMDSSIT]
+Fetching JDBC Connection from DataSource
+Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@scrbsmddk002539:1521/SMDSSIT]
+Fetching JDBC Connection from DataSource
+Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@scrbsmddk002539:1521/SMDSSIT]
 POST "/opsmdm/geo/publish?eventDetails=Update&geoRowID=2234%20%20%20%20%20%20%20%20%20%20", parameters={masked}
 Mapped to net.apmm.mdm.ops.geo.controller.PublishGeoController#publishGeographyService(String, String)
 Request received for GeoROWID 2234           running on thread http-nio-8080-exec-1
@@ -2677,10 +2824,10 @@ where A.HUB_STATE_IND=1 AND A.ROWID_OBJECT=?]
 Fetching JDBC Connection from DataSource
 Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@scrbsmddk002539:1521/SMDSSIT]
 geographyInfo message Out
- Message before sending.... {"geography": {"geoId": "00ADIYBEC5L6N", "geoType": "City", "name": "Pune", "status": "Active", "validFrom": "1900-01-01", "validTo": "9999-12-31", "longitude": "73.859301", "latitude": "18.531206", "timeZone": "INT", "daylightSavingTime": "DDST", "utcOffsetMinutes": "330", "daylightSavingStart": null, "daylightSavingEnd": null, "daylightSavingShiftMinutes": null, "description": "test  ", "workaroundReason": null, "restricted": null, "postalCodeMandatory": null, "stateProvienceMandatory": null, "dialingCode": null, "dialingCodeDescription": null, "portFlag": false, "olsonTimezone": "Asia/Kolkata", "bdaType": null, "hsudName": null, "alternateNames": [{"name": "lCD DIGHI", "description": "test alternate name1", "status": "Active"}, {"name": "lCD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "ICD CHINCHWAD", "description": "ret1107", "status": "Active"}, {"name": "ICD CHINCHWAD, INDIA", "description": "PNQ", "status": "Active"}, {"name": "ICD DIGHI PUNE", "description": null, "status": "InActive"}, {"name": "ICD DIGHI PUNE INDIA", "description": null, "status": "InActive"}, {"name": "ICD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "ICD PUNE", "description": null, "status": "InActive"}, {"name": "Pimpri, Pune, India", "description": null, "status": "InActive"}, {"name": "PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "PUNE, IN", "description": null, "status": "InActive"}, {"name": "PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "Poona", "description": null, "status": "Active"}], "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}], "country": [{"name": "India", "type": "Country", "alternateCodes": [{"codeType": "GEOID", "code": "10Z2W9ZTH2RUM"}, {"codeType": "FIPS", "code": "IN"}, {"codeType": "RKST", "code": "IN"}, {"codeType": "RKTS", "code": "410"}]}], "parent": {"name": "India", "type": "Country", "bdaType": null, "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}]}, "subCityParent": null, "bda": [{"name": "North India", "type": "Business Defined Area", "bdaType": "FINANCIAL", "alternateCodes": [{"codeType": "BDA CODE", "code": "41001"}, {"codeType": "GEOID", "code": "2007042541001"}]}, {"name": "West & Central Asia test", "type": "Business Defined Area", "bdaType": "LOC", "alternateCodes": [{"codeType": "GEOID", "code": "2010051800WCA"}, {"codeType": "BDA CODE", "code": "WCA"}]}, {"name": "INJHT", "type": "Business Defined Area", "bdaType": "POOL", "alternateCodes": [{"codeType": "GEOID", "code": "8XNVIG2K5ASM2"}, {"codeType": "BDA CODE", "code": "INJHT"}]}], "bdaLocations": null}}
+ Message before sending.... {"geography": {"geoId": "00ADIYBEC5L6N", "geoType": "City", "name": "Pune", "status": "Active", "validFrom": "1900-01-01", "validTo": "9999-12-31", "longitude": "73.859301", "latitude": "18.531206", "timeZone": "INT", "daylightSavingTime": "DDST", "utcOffsetMinutes": "330", "daylightSavingStart": null, "daylightSavingEnd": null, "daylightSavingShiftMinutes": null, "description": "test  ", "workaroundReason": null, "restricted": null, "postalCodeMandatory": null, "stateProvienceMandatory": null, "dialingCode": null, "dialingCodeDescription": null, "portFlag": false, "olsonTimezone": "Asia/Kolkata", "bdaType": null, "hsudName": null, "alternateNames": [{"name": "lCD DIGHI", "description": "test alternate name1", "status": "Active"}, {"name": "lCD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "ICD CHINCHWAD", "description": "ret1107", "status": "Active"}, {"name": "ICD CHINCHWAD, INDIA", "description": "PNQ", "status": "Active"}, {"name": "ICD DIGHI PUNE", "description": null, "status": "InActive"}, {"name": "ICD DIGHI PUNE INDIA", "description": null, "status": "InActive"}, {"name": "ICD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "ICD PUNE", "description": null, "status": "InActive"}, {"name": "Pimpri, Pune, India", "description": null, "status": "InActive"}, {"name": "PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "PUNE, IN", "description": null, "status": "InActive"}, {"name": "PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "Poona", "description": null, "status": "Active"}], "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}], "countries": [{"name": "India", "type": "Country", "alternateCodes": [{"codeType": "GEOID", "code": "10Z2W9ZTH2RUM"}, {"codeType": "FIPS", "code": "IN"}, {"codeType": "RKST", "code": "IN"}, {"codeType": "RKTS", "code": "410"}]}], "parent": {"name": "India", "type": "Country", "bdaType": null, "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}]}, "subCityParents": null, "bdas": [{"name": "North India", "type": "Business Defined Area", "bdaType": "FINANCIAL", "alternateCodes": [{"codeType": "BDA CODE", "code": "41001"}, {"codeType": "GEOID", "code": "2007042541001"}]}, {"name": "West & Central Asia test", "type": "Business Defined Area", "bdaType": "LOC", "alternateCodes": [{"codeType": "GEOID", "code": "2010051800WCA"}, {"codeType": "BDA CODE", "code": "WCA"}]}, {"name": "INJHT", "type": "Business Defined Area", "bdaType": "POOL", "alternateCodes": [{"codeType": "GEOID", "code": "8XNVIG2K5ASM2"}, {"codeType": "BDA CODE", "code": "INJHT"}]}], "bdaLocations": null}}
 geographyInfo message Out
- Record before publish ProducerRecord(topic=MSK.geography.gda.topic.internal.any.v2, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=2234          , value={"geography": {"geoId": "00ADIYBEC5L6N", "geoType": "City", "name": "Pune", "status": "Active", "validFrom": "1900-01-01", "validTo": "9999-12-31", "longitude": "73.859301", "latitude": "18.531206", "timeZone": "INT", "daylightSavingTime": "DDST", "utcOffsetMinutes": "330", "daylightSavingStart": null, "daylightSavingEnd": null, "daylightSavingShiftMinutes": null, "description": "test  ", "workaroundReason": null, "restricted": null, "postalCodeMandatory": null, "stateProvienceMandatory": null, "dialingCode": null, "dialingCodeDescription": null, "portFlag": false, "olsonTimezone": "Asia/Kolkata", "bdaType": null, "hsudName": null, "alternateNames": [{"name": "lCD DIGHI", "description": "test alternate name1", "status": "Active"}, {"name": "lCD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "ICD CHINCHWAD", "description": "ret1107", "status": "Active"}, {"name": "ICD CHINCHWAD, INDIA", "description": "PNQ", "status": "Active"}, {"name": "ICD DIGHI PUNE", "description": null, "status": "InActive"}, {"name": "ICD DIGHI PUNE INDIA", "description": null, "status": "InActive"}, {"name": "ICD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "ICD PUNE", "description": null, "status": "InActive"}, {"name": "Pimpri, Pune, India", "description": null, "status": "InActive"}, {"name": "PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "PUNE, IN", "description": null, "status": "InActive"}, {"name": "PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "Poona", "description": null, "status": "Active"}], "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}], "country": [{"name": "India", "type": "Country", "alternateCodes": [{"codeType": "GEOID", "code": "10Z2W9ZTH2RUM"}, {"codeType": "FIPS", "code": "IN"}, {"codeType": "RKST", "code": "IN"}, {"codeType": "RKTS", "code": "410"}]}], "parent": {"name": "India", "type": "Country", "bdaType": null, "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}]}, "subCityParent": null, "bda": [{"name": "North India", "type": "Business Defined Area", "bdaType": "FINANCIAL", "alternateCodes": [{"codeType": "BDA CODE", "code": "41001"}, {"codeType": "GEOID", "code": "2007042541001"}]}, {"name": "West & Central Asia test", "type": "Business Defined Area", "bdaType": "LOC", "alternateCodes": [{"codeType": "GEOID", "code": "2010051800WCA"}, {"codeType": "BDA CODE", "code": "WCA"}]}, {"name": "INJHT", "type": "Business Defined Area", "bdaType": "POOL", "alternateCodes": [{"codeType": "GEOID", "code": "8XNVIG2K5ASM2"}, {"codeType": "BDA CODE", "code": "INJHT"}]}], "bdaLocations": null}}, timestamp=null)
- Record after header append ProducerRecord(topic=MSK.geography.gda.topic.internal.any.v2, partition=null, headers=RecordHeaders(headers = [RecordHeader(key = EventType, value = [85, 112, 100, 97, 116, 101]), RecordHeader(key = EventDescription, value = [103, 101, 111, 68, 97, 116, 97, 85, 112, 100, 97, 116, 101, 100]), RecordHeader(key = eventDateTime, value = [84, 117, 101, 32, 68, 101, 99, 32, 48, 55, 32, 50, 51, 58, 53, 57, 58, 49, 55, 32, 73, 83, 84, 32, 50, 48, 50, 49]), RecordHeader(key = messageId, value = [57, 55, 102, 57, 50, 102, 49, 100, 45, 50, 51, 102, 54, 45, 52, 53, 57, 102, 45, 97, 97, 57, 100, 45, 97, 52, 99, 97, 50, 102, 98, 101, 102, 50, 49, 98])], isReadOnly = false), key=2234          , value={"geography": {"geoId": "00ADIYBEC5L6N", "geoType": "City", "name": "Pune", "status": "Active", "validFrom": "1900-01-01", "validTo": "9999-12-31", "longitude": "73.859301", "latitude": "18.531206", "timeZone": "INT", "daylightSavingTime": "DDST", "utcOffsetMinutes": "330", "daylightSavingStart": null, "daylightSavingEnd": null, "daylightSavingShiftMinutes": null, "description": "test  ", "workaroundReason": null, "restricted": null, "postalCodeMandatory": null, "stateProvienceMandatory": null, "dialingCode": null, "dialingCodeDescription": null, "portFlag": false, "olsonTimezone": "Asia/Kolkata", "bdaType": null, "hsudName": null, "alternateNames": [{"name": "lCD DIGHI", "description": "test alternate name1", "status": "Active"}, {"name": "lCD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "ICD CHINCHWAD", "description": "ret1107", "status": "Active"}, {"name": "ICD CHINCHWAD, INDIA", "description": "PNQ", "status": "Active"}, {"name": "ICD DIGHI PUNE", "description": null, "status": "InActive"}, {"name": "ICD DIGHI PUNE INDIA", "description": null, "status": "InActive"}, {"name": "ICD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "ICD PUNE", "description": null, "status": "InActive"}, {"name": "Pimpri, Pune, India", "description": null, "status": "InActive"}, {"name": "PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "PUNE, IN", "description": null, "status": "InActive"}, {"name": "PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "Poona", "description": null, "status": "Active"}], "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}], "country": [{"name": "India", "type": "Country", "alternateCodes": [{"codeType": "GEOID", "code": "10Z2W9ZTH2RUM"}, {"codeType": "FIPS", "code": "IN"}, {"codeType": "RKST", "code": "IN"}, {"codeType": "RKTS", "code": "410"}]}], "parent": {"name": "India", "type": "Country", "bdaType": null, "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}]}, "subCityParent": null, "bda": [{"name": "North India", "type": "Business Defined Area", "bdaType": "FINANCIAL", "alternateCodes": [{"codeType": "BDA CODE", "code": "41001"}, {"codeType": "GEOID", "code": "2007042541001"}]}, {"name": "West & Central Asia test", "type": "Business Defined Area", "bdaType": "LOC", "alternateCodes": [{"codeType": "GEOID", "code": "2010051800WCA"}, {"codeType": "BDA CODE", "code": "WCA"}]}, {"name": "INJHT", "type": "Business Defined Area", "bdaType": "POOL", "alternateCodes": [{"codeType": "GEOID", "code": "8XNVIG2K5ASM2"}, {"codeType": "BDA CODE", "code": "INJHT"}]}], "bdaLocations": null}}, timestamp=null)
+ Record before publish ProducerRecord(topic=MSK.geography.gda.topic.internal.any.v2, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=2234          , value={"geography": {"geoId": "00ADIYBEC5L6N", "geoType": "City", "name": "Pune", "status": "Active", "validFrom": "1900-01-01", "validTo": "9999-12-31", "longitude": "73.859301", "latitude": "18.531206", "timeZone": "INT", "daylightSavingTime": "DDST", "utcOffsetMinutes": "330", "daylightSavingStart": null, "daylightSavingEnd": null, "daylightSavingShiftMinutes": null, "description": "test  ", "workaroundReason": null, "restricted": null, "postalCodeMandatory": null, "stateProvienceMandatory": null, "dialingCode": null, "dialingCodeDescription": null, "portFlag": false, "olsonTimezone": "Asia/Kolkata", "bdaType": null, "hsudName": null, "alternateNames": [{"name": "lCD DIGHI", "description": "test alternate name1", "status": "Active"}, {"name": "lCD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "ICD CHINCHWAD", "description": "ret1107", "status": "Active"}, {"name": "ICD CHINCHWAD, INDIA", "description": "PNQ", "status": "Active"}, {"name": "ICD DIGHI PUNE", "description": null, "status": "InActive"}, {"name": "ICD DIGHI PUNE INDIA", "description": null, "status": "InActive"}, {"name": "ICD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "ICD PUNE", "description": null, "status": "InActive"}, {"name": "Pimpri, Pune, India", "description": null, "status": "InActive"}, {"name": "PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "PUNE, IN", "description": null, "status": "InActive"}, {"name": "PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "Poona", "description": null, "status": "Active"}], "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}], "countries": [{"name": "India", "type": "Country", "alternateCodes": [{"codeType": "GEOID", "code": "10Z2W9ZTH2RUM"}, {"codeType": "FIPS", "code": "IN"}, {"codeType": "RKST", "code": "IN"}, {"codeType": "RKTS", "code": "410"}]}], "parent": {"name": "India", "type": "Country", "bdaType": null, "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}]}, "subCityParents": null, "bdas": [{"name": "North India", "type": "Business Defined Area", "bdaType": "FINANCIAL", "alternateCodes": [{"codeType": "BDA CODE", "code": "41001"}, {"codeType": "GEOID", "code": "2007042541001"}]}, {"name": "West & Central Asia test", "type": "Business Defined Area", "bdaType": "LOC", "alternateCodes": [{"codeType": "GEOID", "code": "2010051800WCA"}, {"codeType": "BDA CODE", "code": "WCA"}]}, {"name": "INJHT", "type": "Business Defined Area", "bdaType": "POOL", "alternateCodes": [{"codeType": "GEOID", "code": "8XNVIG2K5ASM2"}, {"codeType": "BDA CODE", "code": "INJHT"}]}], "bdaLocations": null}}, timestamp=null)
+ Record after header append ProducerRecord(topic=MSK.geography.gda.topic.internal.any.v2, partition=null, headers=RecordHeaders(headers = [RecordHeader(key = EventType, value = [85, 112, 100, 97, 116, 101]), RecordHeader(key = EventDescription, value = [103, 101, 111, 68, 97, 116, 97, 85, 112, 100, 97, 116, 101, 100]), RecordHeader(key = eventDateTime, value = [87, 101, 100, 32, 68, 101, 99, 32, 48, 56, 32, 49, 51, 58, 53, 52, 58, 52, 49, 32, 73, 83, 84, 32, 50, 48, 50, 49]), RecordHeader(key = messageId, value = [57, 53, 100, 57, 48, 100, 101, 48, 45, 52, 99, 55, 97, 45, 52, 55, 51, 101, 45, 56, 99, 50, 101, 45, 51, 48, 102, 100, 52, 57, 56, 102, 101, 57, 100, 53])], isReadOnly = false), key=2234          , value={"geography": {"geoId": "00ADIYBEC5L6N", "geoType": "City", "name": "Pune", "status": "Active", "validFrom": "1900-01-01", "validTo": "9999-12-31", "longitude": "73.859301", "latitude": "18.531206", "timeZone": "INT", "daylightSavingTime": "DDST", "utcOffsetMinutes": "330", "daylightSavingStart": null, "daylightSavingEnd": null, "daylightSavingShiftMinutes": null, "description": "test  ", "workaroundReason": null, "restricted": null, "postalCodeMandatory": null, "stateProvienceMandatory": null, "dialingCode": null, "dialingCodeDescription": null, "portFlag": false, "olsonTimezone": "Asia/Kolkata", "bdaType": null, "hsudName": null, "alternateNames": [{"name": "lCD DIGHI", "description": "test alternate name1", "status": "Active"}, {"name": "lCD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI", "description": null, "status": "InActive"}, {"name": "CFS PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "ICD CHINCHWAD", "description": "ret1107", "status": "Active"}, {"name": "ICD CHINCHWAD, INDIA", "description": "PNQ", "status": "Active"}, {"name": "ICD DIGHI PUNE", "description": null, "status": "InActive"}, {"name": "ICD DIGHI PUNE INDIA", "description": null, "status": "InActive"}, {"name": "ICD DIGHI, PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "ICD PUNE", "description": null, "status": "InActive"}, {"name": "Pimpri, Pune, India", "description": null, "status": "InActive"}, {"name": "PIMPRI, PUNE", "description": null, "status": "InActive"}, {"name": "PUNE, IN", "description": null, "status": "InActive"}, {"name": "PUNE, INDIA", "description": null, "status": "InActive"}, {"name": "Poona", "description": null, "status": "Active"}], "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}], "countries": [{"name": "India", "type": "Country", "alternateCodes": [{"codeType": "GEOID", "code": "10Z2W9ZTH2RUM"}, {"codeType": "FIPS", "code": "IN"}, {"codeType": "RKST", "code": "IN"}, {"codeType": "RKTS", "code": "410"}]}], "parent": {"name": "India", "type": "Country", "bdaType": null, "alternateCodes": [{"codeType": "RKST", "code": "INPNQ"}, {"codeType": "GEOID", "code": "00ADIYBEC5L6N"}, {"codeType": "HSUD CODE", "code": "INPUNE0"}, {"codeType": "SCHEDULE K", "code": "53312"}, {"codeType": "HSUD NUMBER", "code": "123456789"}, {"codeType": "RKTS", "code": "'/'"}, {"codeType": "UN CODE", "code": "INPNQ"}]}, "subCityParents": null, "bdas": [{"name": "North India", "type": "Business Defined Area", "bdaType": "FINANCIAL", "alternateCodes": [{"codeType": "BDA CODE", "code": "41001"}, {"codeType": "GEOID", "code": "2007042541001"}]}, {"name": "West & Central Asia test", "type": "Business Defined Area", "bdaType": "LOC", "alternateCodes": [{"codeType": "GEOID", "code": "2010051800WCA"}, {"codeType": "BDA CODE", "code": "WCA"}]}, {"name": "INJHT", "type": "Business Defined Area", "bdaType": "POOL", "alternateCodes": [{"codeType": "GEOID", "code": "8XNVIG2K5ASM2"}, {"codeType": "BDA CODE", "code": "INJHT"}]}], "bdaLocations": null}}, timestamp=null)
 ProducerConfig values: 
 	acks = -1
 	batch.size = 16384
@@ -2774,53 +2921,53 @@ net.apmm.mdm.ops.geo.exception.PublishException: Error while generating & publis
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.1.jar:2.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.55.jar:9.0.55]
 	at java.lang.Thread.run(Thread.java:834) [?:?]

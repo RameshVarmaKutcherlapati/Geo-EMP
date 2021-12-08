@@ -121,15 +121,15 @@ public class PublishGeographyService {
         log.info("geographyInfo message Out", geographyInfo);
 
 
-        List<alternateNames> geographyAlternateNamesList = geoMsg.getGeographyData().getAlternateNames().stream()
-                .map(list -> new alternateNames(list.getName(), list.getDescription(), list.getStatus())).collect(Collectors.toList());
+        List<alternateName> geographyAlternateNamesList = geoMsg.getGeographyData().getAlternateNames().stream()
+                .map(list -> new alternateName(list.getName(), list.getDescription(), list.getStatus())).collect(Collectors.toList());
 
         if (geographyAlternateNamesList.size() != 0)
             geographyInfo.setAlternateNames(geographyAlternateNamesList);
 
 
-        List<alternateCodes> geographyAlternateCodesList = geoMsg.getGeographyData().getAlternateCodes().stream()
-                .map(list -> new alternateCodes(list.getCodeType(), list.getCode())).collect(Collectors.toList());
+        List<alternateCode> geographyAlternateCodesList = geoMsg.getGeographyData().getAlternateCodes().stream()
+                .map(list -> new alternateCode(list.getCodeType(), list.getCode())).collect(Collectors.toList());
 
         if (geographyAlternateCodesList.size() != 0)
             geographyInfo.setAlternateCodes(geographyAlternateCodesList);
@@ -144,11 +144,11 @@ public class PublishGeographyService {
         List<country> geographyCountryDetailsList = geoMsg.getGeographyData().getCountry().stream()
                 .map(list -> new country(list.getName(), list.getType(),
                         list.getCountryAltCdData().stream()
-                                .map(l -> new countryAlternateCodes(l.getCodeType(), l.getCode())).collect(Collectors.toList())))
+                                .map(l -> new countryAlternateCode(l.getCodeType(), l.getCode())).collect(Collectors.toList())))
                 .collect(Collectors.toList());
 
         for (country countryDetails : geographyCountryDetailsList) {
-            for (countryAlternateCodes cntryAltCdDetails : countryDetails.getAlternateCodes()) {
+            for (countryAlternateCode cntryAltCdDetails : countryDetails.getAlternateCodes()) {
                 if (cntryAltCdDetails.getCodeType() == null &&
                         cntryAltCdDetails.getCode() == null)
                     countryDetails.setAlternateCodes(null);
@@ -157,7 +157,7 @@ public class PublishGeographyService {
 
         }
         if (geographyCountryDetailsList.size() != 0)
-            geographyInfo.setCountry(geographyCountryDetailsList);
+            geographyInfo.setCountries(geographyCountryDetailsList);
 
 
         geographyParent.setName(geoMsg.getGeographyData().getParentDetails().getName());
@@ -187,7 +187,7 @@ public class PublishGeographyService {
             }
         }
         if (geographySubCityPrntDetailsList.size() != 0)
-            geographyInfo.setSubCityParent(geographySubCityPrntDetailsList);
+            geographyInfo.setSubCityParents(geographySubCityPrntDetailsList);
 
 
         List<bda> geographyBDADetailsList = geoMsg.getGeographyData().getBdaDetails().stream()
@@ -207,7 +207,7 @@ public class PublishGeographyService {
 
         }
         if (geographyBDADetailsList.size() != 0)
-            geographyInfo.setBda(geographyBDADetailsList);
+            geographyInfo.setBdas(geographyBDADetailsList);
 
 
         List<bdaLocation> geoBDALocDetailsList = geoMsg.getGeographyData().getBdaLocationsDetails().stream()
